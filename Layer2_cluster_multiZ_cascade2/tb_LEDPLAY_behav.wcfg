@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_LEDPLAY_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_LEDPLAY" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/clk_p">
+      <obj_property name="ElementShortName">clk_p</obj_property>
+      <obj_property name="ObjectShortName">clk_p</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/clk_n">
+      <obj_property name="ElementShortName">clk_n</obj_property>
+      <obj_property name="ObjectShortName">clk_n</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/sw_north">
+      <obj_property name="ElementShortName">sw_north</obj_property>
+      <obj_property name="ObjectShortName">sw_north</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/sw_east">
+      <obj_property name="ElementShortName">sw_east</obj_property>
+      <obj_property name="ObjectShortName">sw_east</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/sw_south">
+      <obj_property name="ElementShortName">sw_south</obj_property>
+      <obj_property name="ObjectShortName">sw_south</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/sw_west">
+      <obj_property name="ElementShortName">sw_west</obj_property>
+      <obj_property name="ObjectShortName">sw_west</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/sw_center">
+      <obj_property name="ElementShortName">sw_center</obj_property>
+      <obj_property name="ObjectShortName">sw_center</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/r_stop">
+      <obj_property name="ElementShortName">r_stop</obj_property>
+      <obj_property name="ObjectShortName">r_stop</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/cluster_in">
+      <obj_property name="ElementShortName">cluster_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cluster_in[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/HTmax">
+      <obj_property name="ElementShortName">HTmax[15:0]</obj_property>
+      <obj_property name="ObjectShortName">HTmax[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/Nmax">
+      <obj_property name="ElementShortName">Nmax[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Nmax[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/r_state">
+      <obj_property name="ElementShortName">r_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r_state[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/state">
+      <obj_property name="ElementShortName">state[8:0]</obj_property>
+      <obj_property name="ObjectShortName">state[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/ledout">
+      <obj_property name="ElementShortName">ledout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ledout[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/ledout[7]">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">ledout[7]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/ledout[6]">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">ledout[6]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/ledout[5]">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">ledout[5]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/ledout[4]">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">ledout[4]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/ledout[3]">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">ledout[3]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/ledout[2]">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">ledout[2]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/ledout[1]">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">ledout[1]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/ledout[0]">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">ledout[0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/next">
+      <obj_property name="ElementShortName">next</obj_property>
+      <obj_property name="ObjectShortName">next</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/JETmax">
+      <obj_property name="ElementShortName">JETmax[31:0]</obj_property>
+      <obj_property name="ObjectShortName">JETmax[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/jet_addr">
+      <obj_property name="ElementShortName">jet_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">jet_addr[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group239">
+      <obj_property name="label">MZ1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group150">
+         <obj_property name="label">next_machine</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/n_veto">
+            <obj_property name="ElementShortName">n_veto</obj_property>
+            <obj_property name="ObjectShortName">n_veto</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/n_state">
+            <obj_property name="ElementShortName">n_state[3:0]</obj_property>
+            <obj_property name="ObjectShortName">n_state[3:0]</obj_property>
+         </wvobject>
+         <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/n_veto_count">
+            <obj_property name="ElementShortName">n_veto_count[28:0]</obj_property>
+            <obj_property name="ObjectShortName">n_veto_count[28:0]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

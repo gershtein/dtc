@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_LEDPLAY_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_LEDPLAY" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="107" />
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/clk_p">
+      <obj_property name="ElementShortName">clk_p</obj_property>
+      <obj_property name="ObjectShortName">clk_p</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/clk_n">
+      <obj_property name="ElementShortName">clk_n</obj_property>
+      <obj_property name="ObjectShortName">clk_n</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/sw_north">
+      <obj_property name="ElementShortName">sw_north</obj_property>
+      <obj_property name="ObjectShortName">sw_north</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/sw_east">
+      <obj_property name="ElementShortName">sw_east</obj_property>
+      <obj_property name="ObjectShortName">sw_east</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/sw_south">
+      <obj_property name="ElementShortName">sw_south</obj_property>
+      <obj_property name="ObjectShortName">sw_south</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/sw_west">
+      <obj_property name="ElementShortName">sw_west</obj_property>
+      <obj_property name="ObjectShortName">sw_west</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/sw_center">
+      <obj_property name="ElementShortName">sw_center</obj_property>
+      <obj_property name="ObjectShortName">sw_center</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/sysclk">
+      <obj_property name="ElementShortName">sysclk</obj_property>
+      <obj_property name="ObjectShortName">sysclk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/locked">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/clk_reset">
+      <obj_property name="ElementShortName">clk_reset</obj_property>
+      <obj_property name="ObjectShortName">clk_reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/next">
+      <obj_property name="ElementShortName">next</obj_property>
+      <obj_property name="ObjectShortName">next</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/nextZ">
+      <obj_property name="ElementShortName">nextZ</obj_property>
+      <obj_property name="ObjectShortName">nextZ</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/cluster_addr">
+      <obj_property name="ElementShortName">cluster_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cluster_addr[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/cluster_in">
+      <obj_property name="ElementShortName">cluster_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cluster_in[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/r_state">
+      <obj_property name="ElementShortName">r_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r_state[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/r_stop">
+      <obj_property name="ElementShortName">r_stop</obj_property>
+      <obj_property name="ObjectShortName">r_stop</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/done">
+      <obj_property name="ElementShortName">done[63:0]</obj_property>
+      <obj_property name="ObjectShortName">done[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/all_done">
+      <obj_property name="ElementShortName">all_done</obj_property>
+      <obj_property name="ObjectShortName">all_done</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/jet_addr">
+      <obj_property name="ElementShortName">jet_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">jet_addr[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/jet_zbin">
+      <obj_property name="ElementShortName">jet_zbin[5:0]</obj_property>
+      <obj_property name="ObjectShortName">jet_zbin[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/jet_out">
+      <obj_property name="ElementShortName">jet_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">jet_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/jet_num">
+      <obj_property name="ElementShortName">jet_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">jet_num[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/blinker">
+      <obj_property name="ElementShortName">blinker[35:0]</obj_property>
+      <obj_property name="ObjectShortName">blinker[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/ledout">
+      <obj_property name="ElementShortName">ledout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ledout[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/state">
+      <obj_property name="ElementShortName">state[9:0]</obj_property>
+      <obj_property name="ObjectShortName">state[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PEM /clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PEM /sel">
+      <obj_property name="ElementShortName">sel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PEM /i0">
+      <obj_property name="ElementShortName">i0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i0[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PEM /i1">
+      <obj_property name="ElementShortName">i1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PEM /i2">
+      <obj_property name="ElementShortName">i2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i2[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PEM /i3">
+      <obj_property name="ElementShortName">i3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i3[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PEM /i4">
+      <obj_property name="ElementShortName">i4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i4[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PEM /i5">
+      <obj_property name="ElementShortName">i5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i5[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PEM /o">
+      <obj_property name="ElementShortName">o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /has_dat00">
+      <obj_property name="ElementShortName">has_dat00</obj_property>
+      <obj_property name="ObjectShortName">has_dat00</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /has_dat01">
+      <obj_property name="ElementShortName">has_dat01</obj_property>
+      <obj_property name="ObjectShortName">has_dat01</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /has_dat02">
+      <obj_property name="ElementShortName">has_dat02</obj_property>
+      <obj_property name="ObjectShortName">has_dat02</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /has_dat03">
+      <obj_property name="ElementShortName">has_dat03</obj_property>
+      <obj_property name="ObjectShortName">has_dat03</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /has_dat04">
+      <obj_property name="ElementShortName">has_dat04</obj_property>
+      <obj_property name="ObjectShortName">has_dat04</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /has_dat05">
+      <obj_property name="ElementShortName">has_dat05</obj_property>
+      <obj_property name="ObjectShortName">has_dat05</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /sel00">
+      <obj_property name="ElementShortName">sel00</obj_property>
+      <obj_property name="ObjectShortName">sel00</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /sel01">
+      <obj_property name="ElementShortName">sel01</obj_property>
+      <obj_property name="ObjectShortName">sel01</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /sel02">
+      <obj_property name="ElementShortName">sel02</obj_property>
+      <obj_property name="ObjectShortName">sel02</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /sel03">
+      <obj_property name="ElementShortName">sel03</obj_property>
+      <obj_property name="ObjectShortName">sel03</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /sel04">
+      <obj_property name="ElementShortName">sel04</obj_property>
+      <obj_property name="ObjectShortName">sel04</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /sel05">
+      <obj_property name="ElementShortName">sel05</obj_property>
+      <obj_property name="ObjectShortName">sel05</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /sel">
+      <obj_property name="ElementShortName">sel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /none">
+      <obj_property name="ElementShortName">none</obj_property>
+      <obj_property name="ObjectShortName">none</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /wsel00">
+      <obj_property name="ElementShortName">wsel00</obj_property>
+      <obj_property name="ObjectShortName">wsel00</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /wsel01">
+      <obj_property name="ElementShortName">wsel01</obj_property>
+      <obj_property name="ObjectShortName">wsel01</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /wsel02">
+      <obj_property name="ElementShortName">wsel02</obj_property>
+      <obj_property name="ObjectShortName">wsel02</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /wsel03">
+      <obj_property name="ElementShortName">wsel03</obj_property>
+      <obj_property name="ObjectShortName">wsel03</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /wsel04">
+      <obj_property name="ElementShortName">wsel04</obj_property>
+      <obj_property name="ObjectShortName">wsel04</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].PE /wsel05">
+      <obj_property name="ElementShortName">wsel05</obj_property>
+      <obj_property name="ObjectShortName">wsel05</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group361">
+      <obj_property name="label">onechan</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].etabin1[3].PEU /clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].etabin1[3].PEU /init">
+         <obj_property name="ElementShortName">init</obj_property>
+         <obj_property name="ObjectShortName">init</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].etabin1[3].PEU /hold">
+         <obj_property name="ElementShortName">hold</obj_property>
+         <obj_property name="ObjectShortName">hold</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].etabin1[3].PEU /have_data">
+         <obj_property name="ElementShortName">have_data</obj_property>
+         <obj_property name="ObjectShortName">have_data</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].etabin1[3].PEU /sel">
+         <obj_property name="ElementShortName">sel</obj_property>
+         <obj_property name="ObjectShortName">sel</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].etabin1[3].PEU /have_unused_data">
+         <obj_property name="ElementShortName">have_unused_data</obj_property>
+         <obj_property name="ObjectShortName">have_unused_data</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].etabin1[3].PEU /valid">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].etabin1[3].PEU /used">
+         <obj_property name="ElementShortName">used</obj_property>
+         <obj_property name="ObjectShortName">used</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[1].etabin1[3].PEU /active">
+         <obj_property name="ElementShortName">active</obj_property>
+         <obj_property name="ObjectShortName">active</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /stop">
+      <obj_property name="ElementShortName">stop</obj_property>
+      <obj_property name="ObjectShortName">stop</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /track_in">
+      <obj_property name="ElementShortName">track_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">track_in[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /final_cluster_addr">
+      <obj_property name="ElementShortName">final_cluster_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">final_cluster_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /final_cluster_out">
+      <obj_property name="ElementShortName">final_cluster_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">final_cluster_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /final_num">
+      <obj_property name="ElementShortName">final_num[4:0]</obj_property>
+      <obj_property name="ObjectShortName">final_num[4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /start_mux_reg">
+      <obj_property name="ElementShortName">start_mux_reg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">start_mux_reg[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /start_mux">
+      <obj_property name="ElementShortName">start_mux</obj_property>
+      <obj_property name="ObjectShortName">start_mux</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /hold">
+      <obj_property name="ElementShortName">hold[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hold[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /none">
+      <obj_property name="ElementShortName">none[3:0]</obj_property>
+      <obj_property name="ObjectShortName">none[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /pe2_sel">
+      <obj_property name="ElementShortName">pe2_sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pe2_sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /state">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /all_done">
+      <obj_property name="ElementShortName">all_done</obj_property>
+      <obj_property name="ObjectShortName">all_done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /track_pt">
+      <obj_property name="ElementShortName">track_pt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">track_pt[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /track_eta">
+      <obj_property name="ElementShortName">track_eta[4:0]</obj_property>
+      <obj_property name="ObjectShortName">track_eta[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /track_phi">
+      <obj_property name="ElementShortName">track_phi[4:0]</obj_property>
+      <obj_property name="ObjectShortName">track_phi[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /track_z">
+      <obj_property name="ElementShortName">track_z[5:0]</obj_property>
+      <obj_property name="ObjectShortName">track_z[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /AL">
+      <obj_property name="ElementShortName">AL[23:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">AL[23:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /AR">
+      <obj_property name="ElementShortName">AR[23:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">AR[23:0][15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /useAL">
+      <obj_property name="ElementShortName">useAL[23:0]</obj_property>
+      <obj_property name="ObjectShortName">useAL[23:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /useAR">
+      <obj_property name="ElementShortName">useAR[23:0]</obj_property>
+      <obj_property name="ObjectShortName">useAR[23:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet">
+      <obj_property name="ElementShortName">E_jet[23:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">E_jet[23:0][15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[23]">
+         <obj_property name="ElementShortName">[23][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[23][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[22]">
+         <obj_property name="ElementShortName">[22][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[22][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[21]">
+         <obj_property name="ElementShortName">[21][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[21][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[20]">
+         <obj_property name="ElementShortName">[20][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[20][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[19]">
+         <obj_property name="ElementShortName">[19][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[19][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[18]">
+         <obj_property name="ElementShortName">[18][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[18][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[17]">
+         <obj_property name="ElementShortName">[17][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[17][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[16]">
+         <obj_property name="ElementShortName">[16][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[16][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[15]">
+         <obj_property name="ElementShortName">[15][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[15][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[14]">
+         <obj_property name="ElementShortName">[14][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[14][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[13]">
+         <obj_property name="ElementShortName">[13][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[13][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[12]">
+         <obj_property name="ElementShortName">[12][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[12][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[11]">
+         <obj_property name="ElementShortName">[11][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[11][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[10]">
+         <obj_property name="ElementShortName">[10][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[10][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[9]">
+         <obj_property name="ElementShortName">[9][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[9][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[8]">
+         <obj_property name="ElementShortName">[8][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[8][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[7]">
+         <obj_property name="ElementShortName">[7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[7][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[6]">
+         <obj_property name="ElementShortName">[6][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[6][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[5]">
+         <obj_property name="ElementShortName">[5][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[5][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[4]">
+         <obj_property name="ElementShortName">[4][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[4][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[3]">
+         <obj_property name="ElementShortName">[3][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[3][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[2]">
+         <obj_property name="ElementShortName">[2][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[2][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[1]">
+         <obj_property name="ElementShortName">[1][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[1][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /E_jet[0]">
+         <obj_property name="ElementShortName">[0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">E_jet[0][15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /is_jet">
+      <obj_property name="ElementShortName">is_jet[23:0]</obj_property>
+      <obj_property name="ObjectShortName">is_jet[23:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /pe_sel">
+      <obj_property name="ElementShortName">pe_sel[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pe_sel[23:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /pe_valid">
+      <obj_property name="ElementShortName">pe_valid[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pe_valid[23:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /pe_hasdat">
+      <obj_property name="ElementShortName">pe_hasdat[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pe_hasdat[23:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /pe2_valid1">
+      <obj_property name="ElementShortName">pe2_valid1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pe2_valid1[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /pe2_valid2">
+      <obj_property name="ElementShortName">pe2_valid2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pe2_valid2[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /pe2_E_jet">
+      <obj_property name="ElementShortName">pe2_E_jet[3:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">pe2_E_jet[3:0][31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /pe2_E_jet[3]">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">pe2_E_jet[3][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /pe2_E_jet[2]">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">pe2_E_jet[2][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /pe2_E_jet[1]">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">pe2_E_jet[1][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /pe2_E_jet[0]">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">pe2_E_jet[0][31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].etabin1[0].add_valid ">
+      <obj_property name="ElementShortName">\etabin2[0].etabin1[0].add_valid </obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].etabin1[0].add_valid </obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].etabin1[1].add_valid ">
+      <obj_property name="ElementShortName">\etabin2[0].etabin1[1].add_valid </obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].etabin1[1].add_valid </obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].etabin1[2].add_valid ">
+      <obj_property name="ElementShortName">\etabin2[0].etabin1[2].add_valid </obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].etabin1[2].add_valid </obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].etabin1[3].add_valid ">
+      <obj_property name="ElementShortName">\etabin2[0].etabin1[3].add_valid </obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].etabin1[3].add_valid </obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].etabin1[4].add_valid ">
+      <obj_property name="ElementShortName">\etabin2[0].etabin1[4].add_valid </obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].etabin1[4].add_valid </obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].etabin1[5].add_valid ">
+      <obj_property name="ElementShortName">\etabin2[0].etabin1[5].add_valid </obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].etabin1[5].add_valid </obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].pe_sel_enc ">
+      <obj_property name="ElementShortName">\etabin2[0].pe_sel_enc [2:0]</obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].pe_sel_enc [2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].e0 ">
+      <obj_property name="ElementShortName">\etabin2[0].e0 [4:0]</obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].e0 [4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].e1 ">
+      <obj_property name="ElementShortName">\etabin2[0].e1 [4:0]</obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].e1 [4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].e2 ">
+      <obj_property name="ElementShortName">\etabin2[0].e2 [4:0]</obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].e2 [4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].e3 ">
+      <obj_property name="ElementShortName">\etabin2[0].e3 [4:0]</obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].e3 [4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].e4 ">
+      <obj_property name="ElementShortName">\etabin2[0].e4 [4:0]</obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].e4 [4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /\etabin2[0].e5 ">
+      <obj_property name="ElementShortName">\etabin2[0].e5 [4:0]</obj_property>
+      <obj_property name="ObjectShortName">\etabin2[0].e5 [4:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /cluster_valid">
+      <obj_property name="ElementShortName">cluster_valid</obj_property>
+      <obj_property name="ObjectShortName">cluster_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_LEDPLAY/U/UL1/\zzz[30].UZ /cluster_out">
+      <obj_property name="ElementShortName">cluster_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cluster_out[31:0]</obj_property>
+   </wvobject>
+</wave_config>

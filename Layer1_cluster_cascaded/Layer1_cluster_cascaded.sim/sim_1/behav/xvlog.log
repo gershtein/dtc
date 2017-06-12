@@ -1,0 +1,29 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sources_1/imports/new/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sources_1/imports/new/pe_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pe_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sources_1/new/pe_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pe_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sources_1/imports/new/pe_channel_used.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pe_channel_used
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sources_1/new/jet_cand.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jet_cand
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sources_1/imports/new/FoundJets.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FoundJets
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sources_1/new/Zbin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zbin
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sources_1/imports/new/prio_mux8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prio_mux8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sources_1/new/Layer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Layer1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sources_1/imports/new/LEDPLAY.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDPLAY
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.srcs/sim_1/new/tb_LEDPLAY.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_LEDPLAY
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/gerstein/Xlinix/Vivado/2014.3.1/Layer1_cluster_cascaded/Layer1_cluster_cascaded.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
