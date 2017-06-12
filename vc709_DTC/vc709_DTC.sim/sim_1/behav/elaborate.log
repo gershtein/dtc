@@ -1,0 +1,23 @@
+Vivado Simulator 2014.3
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /home/gerstein/Xlinix/Vivado/2014.3.1/bin/unwrapped/lnx64.o/xelab -wto 9de5942259824f898acce293968f5a82 --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_topmergetest_behav xil_defaultlib.tb_topmergetest xil_defaultlib.glbl -log elaborate.log 
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 3 for port TMUX [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sim_1/new/tb_merge.v:73]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 3 for port TMUX [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sim_1/new/tb_merge.v:95]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 3 for port TMUX [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sim_1/new/tb_merge.v:117]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 3 for port TMUX [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sim_1/new/tb_merge.v:140]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Memory(RAM_WIDTH=4,RAM_DEPTH=256...
+Compiling module xil_defaultlib.Memory(RAM_WIDTH=36,RAM_DEPTH=16...
+Compiling module xil_defaultlib.BetterFifo
+Compiling module xil_defaultlib.link_mem
+Compiling module xil_defaultlib.merge_mux
+Compiling module xil_defaultlib.merge_pe(DELAY=3)
+Compiling module xil_defaultlib.tb_merge
+Compiling module xil_defaultlib.tb_mergesm
+Compiling module xil_defaultlib.tb_topmergetest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_topmergetest_behav

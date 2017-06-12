@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.3.1 (64-bit)
+# SW Build 1056140 on Thu Oct 30 16:30:39 MDT 2014
+# IP Build 1028902 on Fri Sep 26 17:35:13 MDT 2014
+# Start of session at: Mon May 22 16:17:34 2017
+# Process ID: 11959
+# Log file: /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.runs/synth_1/LEDPLAY.vds
+# Journal file: /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source LEDPLAY.tcl

@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_DTC_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_DTC_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="162" />
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/clk320">
+      <obj_property name="ElementShortName">clk320</obj_property>
+      <obj_property name="ObjectShortName">clk320</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/top_reset">
+      <obj_property name="ElementShortName">top_reset</obj_property>
+      <obj_property name="ObjectShortName">top_reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_data">
+      <obj_property name="ElementShortName">M01_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_data">
+      <obj_property name="ElementShortName">M02_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_data">
+      <obj_property name="ElementShortName">M03_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_start">
+      <obj_property name="ElementShortName">M01_start</obj_property>
+      <obj_property name="ObjectShortName">M01_start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_start">
+      <obj_property name="ElementShortName">M02_start</obj_property>
+      <obj_property name="ObjectShortName">M02_start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_start">
+      <obj_property name="ElementShortName">M03_start</obj_property>
+      <obj_property name="ObjectShortName">M03_start</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group433">
+      <obj_property name="label">unpack_and_decode</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_stub">
+         <obj_property name="ElementShortName">M01_stub[17:0]</obj_property>
+         <obj_property name="ObjectShortName">M01_stub[17:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_valid">
+         <obj_property name="ElementShortName">M01_valid</obj_property>
+         <obj_property name="ObjectShortName">M01_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_BX">
+         <obj_property name="ElementShortName">M01_BX[11:0]</obj_property>
+         <obj_property name="ObjectShortName">M01_BX[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_F3">
+         <obj_property name="ElementShortName">M01_F3[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M01_F3[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_status">
+         <obj_property name="ElementShortName">M01_status[8:0]</obj_property>
+         <obj_property name="ObjectShortName">M01_status[8:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_stub">
+         <obj_property name="ElementShortName">M02_stub[17:0]</obj_property>
+         <obj_property name="ObjectShortName">M02_stub[17:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_valid">
+         <obj_property name="ElementShortName">M02_valid</obj_property>
+         <obj_property name="ObjectShortName">M02_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_BX">
+         <obj_property name="ElementShortName">M02_BX[11:0]</obj_property>
+         <obj_property name="ObjectShortName">M02_BX[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_F3">
+         <obj_property name="ElementShortName">M02_F3[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M02_F3[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_status">
+         <obj_property name="ElementShortName">M02_status[8:0]</obj_property>
+         <obj_property name="ObjectShortName">M02_status[8:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_stub">
+         <obj_property name="ElementShortName">M03_stub[17:0]</obj_property>
+         <obj_property name="ObjectShortName">M03_stub[17:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_valid">
+         <obj_property name="ElementShortName">M03_valid</obj_property>
+         <obj_property name="ObjectShortName">M03_valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_BX">
+         <obj_property name="ElementShortName">M03_BX[11:0]</obj_property>
+         <obj_property name="ObjectShortName">M03_BX[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_F3">
+         <obj_property name="ElementShortName">M03_F3[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M03_F3[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_status">
+         <obj_property name="ElementShortName">M03_status[8:0]</obj_property>
+         <obj_property name="ObjectShortName">M03_status[8:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_TMUX">
+         <obj_property name="ElementShortName">M01_TMUX[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M01_TMUX[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_TMUX_OFF">
+         <obj_property name="ElementShortName">M01_TMUX_OFF[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M01_TMUX_OFF[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_TMUX">
+         <obj_property name="ElementShortName">M02_TMUX[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M02_TMUX[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_TMUX_OFF">
+         <obj_property name="ElementShortName">M02_TMUX_OFF[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M02_TMUX_OFF[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_TMUX">
+         <obj_property name="ElementShortName">M03_TMUX[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M03_TMUX[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_TMUX_OFF">
+         <obj_property name="ElementShortName">M03_TMUX_OFF[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M03_TMUX_OFF[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_sector">
+         <obj_property name="ElementShortName">M01_sector[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M01_sector[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_r">
+         <obj_property name="ElementShortName">M01_r[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M01_r[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_phi">
+         <obj_property name="ElementShortName">M01_phi[16:0]</obj_property>
+         <obj_property name="ObjectShortName">M01_phi[16:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_z">
+         <obj_property name="ElementShortName">M01_z[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M01_z[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_pt">
+         <obj_property name="ElementShortName">M01_pt[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M01_pt[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_sector">
+         <obj_property name="ElementShortName">M02_sector[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M02_sector[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_r">
+         <obj_property name="ElementShortName">M02_r[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M02_r[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_phi">
+         <obj_property name="ElementShortName">M02_phi[16:0]</obj_property>
+         <obj_property name="ObjectShortName">M02_phi[16:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_z">
+         <obj_property name="ElementShortName">M02_z[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M02_z[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_pt">
+         <obj_property name="ElementShortName">M02_pt[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M02_pt[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_sector">
+         <obj_property name="ElementShortName">M03_sector[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M03_sector[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_r">
+         <obj_property name="ElementShortName">M03_r[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M03_r[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_phi">
+         <obj_property name="ElementShortName">M03_phi[16:0]</obj_property>
+         <obj_property name="ObjectShortName">M03_phi[16:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_z">
+         <obj_property name="ElementShortName">M03_z[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M03_z[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_pt">
+         <obj_property name="ElementShortName">M03_pt[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M03_pt[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_valid">
+      <obj_property name="ElementShortName">M01_valid</obj_property>
+      <obj_property name="ObjectShortName">M01_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_gstub">
+      <obj_property name="ElementShortName">M01_gstub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_gstub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_0_gstub_out">
+      <obj_property name="ElementShortName">M01_0_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_0_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_0_OFF_OUT">
+      <obj_property name="ElementShortName">M01_0_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_0_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_0_rd_en">
+      <obj_property name="ElementShortName">M01_0_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M01_0_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_0_has_data">
+      <obj_property name="ElementShortName">M01_0_has_data</obj_property>
+      <obj_property name="ObjectShortName">M01_0_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_1_gstub_out">
+      <obj_property name="ElementShortName">M01_1_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_1_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_1_OFF_OUT">
+      <obj_property name="ElementShortName">M01_1_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_1_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_1_rd_en">
+      <obj_property name="ElementShortName">M01_1_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M01_1_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_1_has_data">
+      <obj_property name="ElementShortName">M01_1_has_data</obj_property>
+      <obj_property name="ObjectShortName">M01_1_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_2_gstub_out">
+      <obj_property name="ElementShortName">M01_2_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_2_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_2_OFF_OUT">
+      <obj_property name="ElementShortName">M01_2_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_2_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_2_rd_en">
+      <obj_property name="ElementShortName">M01_2_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M01_2_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_2_has_data">
+      <obj_property name="ElementShortName">M01_2_has_data</obj_property>
+      <obj_property name="ObjectShortName">M01_2_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_3_gstub_out">
+      <obj_property name="ElementShortName">M01_3_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_3_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_3_OFF_OUT">
+      <obj_property name="ElementShortName">M01_3_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_3_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_3_rd_en">
+      <obj_property name="ElementShortName">M01_3_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M01_3_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_3_has_data">
+      <obj_property name="ElementShortName">M01_3_has_data</obj_property>
+      <obj_property name="ObjectShortName">M01_3_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_4_gstub_out">
+      <obj_property name="ElementShortName">M01_4_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_4_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_4_OFF_OUT">
+      <obj_property name="ElementShortName">M01_4_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_4_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_4_rd_en">
+      <obj_property name="ElementShortName">M01_4_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M01_4_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_4_has_data">
+      <obj_property name="ElementShortName">M01_4_has_data</obj_property>
+      <obj_property name="ObjectShortName">M01_4_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_5_gstub_out">
+      <obj_property name="ElementShortName">M01_5_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_5_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_5_OFF_OUT">
+      <obj_property name="ElementShortName">M01_5_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_5_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_5_rd_en">
+      <obj_property name="ElementShortName">M01_5_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M01_5_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_5_has_data">
+      <obj_property name="ElementShortName">M01_5_has_data</obj_property>
+      <obj_property name="ObjectShortName">M01_5_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_gstub">
+      <obj_property name="ElementShortName">M02_gstub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_gstub[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_0_gstub_out">
+      <obj_property name="ElementShortName">M02_0_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_0_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_0_OFF_OUT">
+      <obj_property name="ElementShortName">M02_0_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_0_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_0_rd_en">
+      <obj_property name="ElementShortName">M02_0_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M02_0_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_0_has_data">
+      <obj_property name="ElementShortName">M02_0_has_data</obj_property>
+      <obj_property name="ObjectShortName">M02_0_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_1_gstub_out">
+      <obj_property name="ElementShortName">M02_1_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_1_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_1_OFF_OUT">
+      <obj_property name="ElementShortName">M02_1_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_1_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_1_rd_en">
+      <obj_property name="ElementShortName">M02_1_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M02_1_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_1_has_data">
+      <obj_property name="ElementShortName">M02_1_has_data</obj_property>
+      <obj_property name="ObjectShortName">M02_1_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_2_gstub_out">
+      <obj_property name="ElementShortName">M02_2_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_2_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_2_OFF_OUT">
+      <obj_property name="ElementShortName">M02_2_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_2_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_2_rd_en">
+      <obj_property name="ElementShortName">M02_2_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M02_2_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_2_has_data">
+      <obj_property name="ElementShortName">M02_2_has_data</obj_property>
+      <obj_property name="ObjectShortName">M02_2_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_3_gstub_out">
+      <obj_property name="ElementShortName">M02_3_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_3_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_3_OFF_OUT">
+      <obj_property name="ElementShortName">M02_3_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_3_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_3_rd_en">
+      <obj_property name="ElementShortName">M02_3_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M02_3_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_3_has_data">
+      <obj_property name="ElementShortName">M02_3_has_data</obj_property>
+      <obj_property name="ObjectShortName">M02_3_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_4_gstub_out">
+      <obj_property name="ElementShortName">M02_4_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_4_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_4_OFF_OUT">
+      <obj_property name="ElementShortName">M02_4_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_4_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_4_rd_en">
+      <obj_property name="ElementShortName">M02_4_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M02_4_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_4_has_data">
+      <obj_property name="ElementShortName">M02_4_has_data</obj_property>
+      <obj_property name="ObjectShortName">M02_4_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_5_gstub_out">
+      <obj_property name="ElementShortName">M02_5_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_5_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_5_OFF_OUT">
+      <obj_property name="ElementShortName">M02_5_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_5_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_5_rd_en">
+      <obj_property name="ElementShortName">M02_5_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M02_5_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_5_has_data">
+      <obj_property name="ElementShortName">M02_5_has_data</obj_property>
+      <obj_property name="ObjectShortName">M02_5_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_gstub">
+      <obj_property name="ElementShortName">M03_gstub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_gstub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_0_gstub_out">
+      <obj_property name="ElementShortName">M03_0_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_0_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_0_OFF_OUT">
+      <obj_property name="ElementShortName">M03_0_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_0_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_0_rd_en">
+      <obj_property name="ElementShortName">M03_0_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M03_0_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_0_has_data">
+      <obj_property name="ElementShortName">M03_0_has_data</obj_property>
+      <obj_property name="ObjectShortName">M03_0_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_1_gstub_out">
+      <obj_property name="ElementShortName">M03_1_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_1_gstub_out[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_1_OFF_OUT">
+      <obj_property name="ElementShortName">M03_1_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_1_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_1_rd_en">
+      <obj_property name="ElementShortName">M03_1_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M03_1_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_1_has_data">
+      <obj_property name="ElementShortName">M03_1_has_data</obj_property>
+      <obj_property name="ObjectShortName">M03_1_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_2_gstub_out">
+      <obj_property name="ElementShortName">M03_2_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_2_gstub_out[35:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_2_OFF_OUT">
+      <obj_property name="ElementShortName">M03_2_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_2_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_2_rd_en">
+      <obj_property name="ElementShortName">M03_2_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M03_2_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_2_has_data">
+      <obj_property name="ElementShortName">M03_2_has_data</obj_property>
+      <obj_property name="ObjectShortName">M03_2_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_3_gstub_out">
+      <obj_property name="ElementShortName">M03_3_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_3_gstub_out[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_3_OFF_OUT">
+      <obj_property name="ElementShortName">M03_3_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_3_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_3_rd_en">
+      <obj_property name="ElementShortName">M03_3_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M03_3_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_3_has_data">
+      <obj_property name="ElementShortName">M03_3_has_data</obj_property>
+      <obj_property name="ObjectShortName">M03_3_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_4_gstub_out">
+      <obj_property name="ElementShortName">M03_4_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_4_gstub_out[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_4_OFF_OUT">
+      <obj_property name="ElementShortName">M03_4_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_4_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_4_rd_en">
+      <obj_property name="ElementShortName">M03_4_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M03_4_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_4_has_data">
+      <obj_property name="ElementShortName">M03_4_has_data</obj_property>
+      <obj_property name="ObjectShortName">M03_4_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_5_gstub_out">
+      <obj_property name="ElementShortName">M03_5_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_5_gstub_out[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_5_OFF_OUT">
+      <obj_property name="ElementShortName">M03_5_OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_5_OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_5_rd_en">
+      <obj_property name="ElementShortName">M03_5_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M03_5_rd_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_5_has_data">
+      <obj_property name="ElementShortName">M03_5_has_data</obj_property>
+      <obj_property name="ObjectShortName">M03_5_has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX0_sel">
+      <obj_property name="ElementShortName">TMUX0_sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX0_sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX0_hold">
+      <obj_property name="ElementShortName">TMUX0_hold</obj_property>
+      <obj_property name="ObjectShortName">TMUX0_hold</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX1_sel">
+      <obj_property name="ElementShortName">TMUX1_sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX1_sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX1_hold">
+      <obj_property name="ElementShortName">TMUX1_hold</obj_property>
+      <obj_property name="ObjectShortName">TMUX1_hold</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX2_sel">
+      <obj_property name="ElementShortName">TMUX2_sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX2_sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX2_hold">
+      <obj_property name="ElementShortName">TMUX2_hold</obj_property>
+      <obj_property name="ObjectShortName">TMUX2_hold</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX3_sel">
+      <obj_property name="ElementShortName">TMUX3_sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX3_sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX3_hold">
+      <obj_property name="ElementShortName">TMUX3_hold</obj_property>
+      <obj_property name="ObjectShortName">TMUX3_hold</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX4_sel">
+      <obj_property name="ElementShortName">TMUX4_sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX4_sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX4_hold">
+      <obj_property name="ElementShortName">TMUX4_hold</obj_property>
+      <obj_property name="ObjectShortName">TMUX4_hold</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX5_sel">
+      <obj_property name="ElementShortName">TMUX5_sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX5_sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX5_hold">
+      <obj_property name="ElementShortName">TMUX5_hold</obj_property>
+      <obj_property name="ObjectShortName">TMUX5_hold</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX0_stub">
+      <obj_property name="ElementShortName">TMUX0_stub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX0_stub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX1_stub">
+      <obj_property name="ElementShortName">TMUX1_stub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX1_stub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX2_stub">
+      <obj_property name="ElementShortName">TMUX2_stub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX2_stub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX3_stub">
+      <obj_property name="ElementShortName">TMUX3_stub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX3_stub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX4_stub">
+      <obj_property name="ElementShortName">TMUX4_stub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX4_stub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX5_stub">
+      <obj_property name="ElementShortName">TMUX5_stub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX5_stub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/sm_start">
+      <obj_property name="ElementShortName">sm_start</obj_property>
+      <obj_property name="ObjectShortName">sm_start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/sm_reset0">
+      <obj_property name="ElementShortName">sm_reset0</obj_property>
+      <obj_property name="ObjectShortName">sm_reset0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/sm_reset1">
+      <obj_property name="ElementShortName">sm_reset1</obj_property>
+      <obj_property name="ObjectShortName">sm_reset1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/sm_reset2">
+      <obj_property name="ElementShortName">sm_reset2</obj_property>
+      <obj_property name="ObjectShortName">sm_reset2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/sm_reset3">
+      <obj_property name="ElementShortName">sm_reset3</obj_property>
+      <obj_property name="ObjectShortName">sm_reset3</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/sm_hold">
+      <obj_property name="ElementShortName">sm_hold</obj_property>
+      <obj_property name="ObjectShortName">sm_hold</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/sm_offset">
+      <obj_property name="ElementShortName">sm_offset[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sm_offset[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/reset0">
+      <obj_property name="ElementShortName">reset0</obj_property>
+      <obj_property name="ObjectShortName">reset0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/reset1">
+      <obj_property name="ElementShortName">reset1</obj_property>
+      <obj_property name="ObjectShortName">reset1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/reset2">
+      <obj_property name="ElementShortName">reset2</obj_property>
+      <obj_property name="ObjectShortName">reset2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/reset3">
+      <obj_property name="ElementShortName">reset3</obj_property>
+      <obj_property name="ObjectShortName">reset3</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group927">
+      <obj_property name="label">module_in_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01/clk320">
+         <obj_property name="ElementShortName">clk320</obj_property>
+         <obj_property name="ObjectShortName">clk320</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01/clk_in">
+         <obj_property name="ElementShortName">clk_in</obj_property>
+         <obj_property name="ObjectShortName">clk_in</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01/data_i">
+         <obj_property name="ElementShortName">data_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_i[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01/addr">
+         <obj_property name="ElementShortName">addr[9:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[9:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01/wea">
+         <obj_property name="ElementShortName">wea</obj_property>
+         <obj_property name="ObjectShortName">wea</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01/data_o">
+         <obj_property name="ElementShortName">data_o[31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_o[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01/start_frame">
+         <obj_property name="ElementShortName">start_frame</obj_property>
+         <obj_property name="ObjectShortName">start_frame</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01/count">
+         <obj_property name="ElementShortName">count[12:0]</obj_property>
+         <obj_property name="ObjectShortName">count[12:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01/count_dly">
+         <obj_property name="ElementShortName">count_dly[12:0]</obj_property>
+         <obj_property name="ObjectShortName">count_dly[12:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01/start_frame_reg">
+         <obj_property name="ElementShortName">start_frame_reg</obj_property>
+         <obj_property name="ObjectShortName">start_frame_reg</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group1545">
+      <obj_property name="label">unpack_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/U01/clk320">
+         <obj_property name="ElementShortName">clk320</obj_property>
+         <obj_property name="ObjectShortName">clk320</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/U01/FRAME1[1]">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">FRAME1[1]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/U01/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/U01/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/stub">
+         <obj_property name="ElementShortName">stub[17:0]</obj_property>
+         <obj_property name="ObjectShortName">stub[17:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/U01/valid">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/BX">
+         <obj_property name="ElementShortName">BX[11:0]</obj_property>
+         <obj_property name="ObjectShortName">BX[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/F3">
+         <obj_property name="ElementShortName">F3[1:0]</obj_property>
+         <obj_property name="ObjectShortName">F3[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/status">
+         <obj_property name="ElementShortName">status[8:0]</obj_property>
+         <obj_property name="ObjectShortName">status[8:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/BOXCAR">
+         <obj_property name="ElementShortName">BOXCAR[255:0]</obj_property>
+         <obj_property name="ObjectShortName">BOXCAR[255:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/FRAME">
+         <obj_property name="ElementShortName">FRAME[5:0]</obj_property>
+         <obj_property name="ObjectShortName">FRAME[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/FRAME1">
+         <obj_property name="ElementShortName">FRAME1[5:0]</obj_property>
+         <obj_property name="ObjectShortName">FRAME1[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/F3_reg">
+         <obj_property name="ElementShortName">F3_reg[1:0]</obj_property>
+         <obj_property name="ObjectShortName">F3_reg[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/stub_reg">
+         <obj_property name="ElementShortName">stub_reg[17:0]</obj_property>
+         <obj_property name="ObjectShortName">stub_reg[17:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/Nstubs">
+         <obj_property name="ElementShortName">Nstubs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">Nstubs[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/Din">
+         <obj_property name="ElementShortName">Din[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Din[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/U01/valid_reg">
+         <obj_property name="ElementShortName">valid_reg</obj_property>
+         <obj_property name="ObjectShortName">valid_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/BX_reg">
+         <obj_property name="ElementShortName">BX_reg[11:0]</obj_property>
+         <obj_property name="ObjectShortName">BX_reg[11:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/U01/status_reg">
+         <obj_property name="ElementShortName">status_reg[8:0]</obj_property>
+         <obj_property name="ObjectShortName">status_reg[8:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group2810">
+      <obj_property name="label">LtoG_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LG_01/clk320">
+         <obj_property name="ElementShortName">clk320</obj_property>
+         <obj_property name="ObjectShortName">clk320</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LG_01/stub">
+         <obj_property name="ElementShortName">stub[14:0]</obj_property>
+         <obj_property name="ObjectShortName">stub[14:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LG_01/valid">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LG_01/sector">
+         <obj_property name="ElementShortName">sector[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sector[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LG_01/r">
+         <obj_property name="ElementShortName">r[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LG_01/phi">
+         <obj_property name="ElementShortName">phi[16:0]</obj_property>
+         <obj_property name="ObjectShortName">phi[16:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LG_01/z">
+         <obj_property name="ElementShortName">z[7:0]</obj_property>
+         <obj_property name="ObjectShortName">z[7:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LG_01/pt">
+         <obj_property name="ElementShortName">pt[2:0]</obj_property>
+         <obj_property name="ObjectShortName">pt[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LG_01/data_o">
+         <obj_property name="ElementShortName">data_o[34:0]</obj_property>
+         <obj_property name="ObjectShortName">data_o[34:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LG_01/pt_reg">
+         <obj_property name="ElementShortName">pt_reg[2:0]</obj_property>
+         <obj_property name="ObjectShortName">pt_reg[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LG_01/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M01_valid">
+      <obj_property name="ElementShortName">M01_valid</obj_property>
+      <obj_property name="ObjectShortName">M01_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMG_01/TMUX">
+      <obj_property name="ElementShortName">TMUX[2:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMG_01/TMUX_OFF">
+      <obj_property name="ElementShortName">TMUX_OFF[1:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX_OFF[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M01_gstub">
+      <obj_property name="ElementShortName">M01_gstub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_gstub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group519">
+      <obj_property name="label">link_mem_1_tmux1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/reset0">
+         <obj_property name="ElementShortName">reset0</obj_property>
+         <obj_property name="ObjectShortName">reset0</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/reset1">
+         <obj_property name="ElementShortName">reset1</obj_property>
+         <obj_property name="ObjectShortName">reset1</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/reset2">
+         <obj_property name="ElementShortName">reset2</obj_property>
+         <obj_property name="ObjectShortName">reset2</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/reset3">
+         <obj_property name="ElementShortName">reset3</obj_property>
+         <obj_property name="ObjectShortName">reset3</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/valid">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/TMUX">
+         <obj_property name="ElementShortName">TMUX[2:0]</obj_property>
+         <obj_property name="ObjectShortName">TMUX[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/TMUX_OFF">
+         <obj_property name="ElementShortName">TMUX_OFF[1:0]</obj_property>
+         <obj_property name="ObjectShortName">TMUX_OFF[1:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/sector">
+         <obj_property name="ElementShortName">sector[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sector[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/stub_in">
+         <obj_property name="ElementShortName">stub_in[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub_in[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/BX">
+         <obj_property name="ElementShortName">BX[11:0]</obj_property>
+         <obj_property name="ObjectShortName">BX[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/BX_OFF">
+         <obj_property name="ElementShortName">BX_OFF[2:0]</obj_property>
+         <obj_property name="ObjectShortName">BX_OFF[2:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/rd_en">
+         <obj_property name="ElementShortName">rd_en</obj_property>
+         <obj_property name="ObjectShortName">rd_en</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/OFF_OUT">
+         <obj_property name="ElementShortName">OFF_OUT[1:0]</obj_property>
+         <obj_property name="ObjectShortName">OFF_OUT[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/stub_out">
+         <obj_property name="ElementShortName">stub_out[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub_out[35:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/has_data">
+         <obj_property name="ElementShortName">has_data</obj_property>
+         <obj_property name="ObjectShortName">has_data</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/wehere">
+         <obj_property name="ElementShortName">wehere</obj_property>
+         <obj_property name="ObjectShortName">wehere</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/we0">
+         <obj_property name="ElementShortName">we0</obj_property>
+         <obj_property name="ObjectShortName">we0</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/we1">
+         <obj_property name="ElementShortName">we1</obj_property>
+         <obj_property name="ObjectShortName">we1</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/we2">
+         <obj_property name="ElementShortName">we2</obj_property>
+         <obj_property name="ObjectShortName">we2</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/we3">
+         <obj_property name="ElementShortName">we3</obj_property>
+         <obj_property name="ObjectShortName">we3</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/re0">
+         <obj_property name="ElementShortName">re0</obj_property>
+         <obj_property name="ObjectShortName">re0</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/re1">
+         <obj_property name="ElementShortName">re1</obj_property>
+         <obj_property name="ObjectShortName">re1</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/re2">
+         <obj_property name="ElementShortName">re2</obj_property>
+         <obj_property name="ObjectShortName">re2</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/re3">
+         <obj_property name="ElementShortName">re3</obj_property>
+         <obj_property name="ObjectShortName">re3</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/stub0">
+         <obj_property name="ElementShortName">stub0[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub0[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/stub1">
+         <obj_property name="ElementShortName">stub1[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub1[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/stub2">
+         <obj_property name="ElementShortName">stub2[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub2[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/stub3">
+         <obj_property name="ElementShortName">stub3[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub3[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/stub_out_reg">
+         <obj_property name="ElementShortName">stub_out_reg[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub_out_reg[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/has_data0">
+         <obj_property name="ElementShortName">has_data0</obj_property>
+         <obj_property name="ObjectShortName">has_data0</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/has_data1">
+         <obj_property name="ElementShortName">has_data1</obj_property>
+         <obj_property name="ObjectShortName">has_data1</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/has_data2">
+         <obj_property name="ElementShortName">has_data2</obj_property>
+         <obj_property name="ObjectShortName">has_data2</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/has_data3">
+         <obj_property name="ElementShortName">has_data3</obj_property>
+         <obj_property name="ObjectShortName">has_data3</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_01_1/has_data_reg">
+         <obj_property name="ElementShortName">has_data_reg</obj_property>
+         <obj_property name="ObjectShortName">has_data_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/myTMUX">
+         <obj_property name="ElementShortName">myTMUX[31:0]</obj_property>
+         <obj_property name="ObjectShortName">myTMUX[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_01_1/mySECT">
+         <obj_property name="ElementShortName">mySECT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mySECT[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group800">
+      <obj_property name="label">PE_TMUX1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX1_pe/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX1_pe/h00">
+         <obj_property name="ElementShortName">h00</obj_property>
+         <obj_property name="ObjectShortName">h00</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX1_pe/h01">
+         <obj_property name="ElementShortName">h01</obj_property>
+         <obj_property name="ObjectShortName">h01</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX1_pe/h02">
+         <obj_property name="ElementShortName">h02</obj_property>
+         <obj_property name="ObjectShortName">h02</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX1_pe/hold">
+         <obj_property name="ElementShortName">hold</obj_property>
+         <obj_property name="ObjectShortName">hold</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX1_pe/re00">
+         <obj_property name="ElementShortName">re00</obj_property>
+         <obj_property name="ObjectShortName">re00</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX1_pe/re01">
+         <obj_property name="ElementShortName">re01</obj_property>
+         <obj_property name="ObjectShortName">re01</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX1_pe/re02">
+         <obj_property name="ElementShortName">re02</obj_property>
+         <obj_property name="ObjectShortName">re02</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX5_sel">
+      <obj_property name="ElementShortName">TMUX5_sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX5_sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/TMUX5_hold">
+      <obj_property name="ElementShortName">TMUX5_hold</obj_property>
+      <obj_property name="ObjectShortName">TMUX5_hold</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/TMUX5_stub">
+      <obj_property name="ElementShortName">TMUX5_stub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">TMUX5_stub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_5_has_data">
+      <obj_property name="ElementShortName">M02_5_has_data</obj_property>
+      <obj_property name="ObjectShortName">M02_5_has_data</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M02_5_rd_en">
+      <obj_property name="ElementShortName">M02_5_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M02_5_rd_en</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M02_5_gstub_out">
+      <obj_property name="ElementShortName">M02_5_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_5_gstub_out[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_02_5/M0/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_02_5/valid_out">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_02_5/M0/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_02_5/M0/DI">
+      <obj_property name="ElementShortName">DI[35:0]</obj_property>
+      <obj_property name="ObjectShortName">DI[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_02_5/M0/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_02_5/M0/re">
+      <obj_property name="ElementShortName">re</obj_property>
+      <obj_property name="ObjectShortName">re</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_02_5/M0/DO">
+      <obj_property name="ElementShortName">DO[35:0]</obj_property>
+      <obj_property name="ObjectShortName">DO[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_02_5/M0/has_data">
+      <obj_property name="ElementShortName">has_data</obj_property>
+      <obj_property name="ObjectShortName">has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_02_5/M0/cnt">
+      <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_02_5/M0/RAM_O">
+      <obj_property name="ElementShortName">RAM_O[35:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM_O[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_02_5/M0/DO_reg">
+      <obj_property name="ElementShortName">DO_reg[35:0]</obj_property>
+      <obj_property name="ObjectShortName">DO_reg[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_02_5/M0/addr_I">
+      <obj_property name="ElementShortName">addr_I[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_I[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_02_5/M0/addr_O">
+      <obj_property name="ElementShortName">addr_O[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_O[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_5_rd_en">
+      <obj_property name="ElementShortName">M03_5_rd_en</obj_property>
+      <obj_property name="ObjectShortName">M03_5_rd_en</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/M03_5_has_data">
+      <obj_property name="ElementShortName">M03_5_has_data</obj_property>
+      <obj_property name="ObjectShortName">M03_5_has_data</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/M03_5_gstub_out">
+      <obj_property name="ElementShortName">M03_5_gstub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_5_gstub_out[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_03_5/M0/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_03_5/valid_out">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_03_5/M0/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_03_5/M0/DI">
+      <obj_property name="ElementShortName">DI[35:0]</obj_property>
+      <obj_property name="ObjectShortName">DI[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_03_5/M0/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_03_5/M0/re">
+      <obj_property name="ElementShortName">re</obj_property>
+      <obj_property name="ObjectShortName">re</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_03_5/M0/DO">
+      <obj_property name="ElementShortName">DO[35:0]</obj_property>
+      <obj_property name="ObjectShortName">DO[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_DTC_top/U/LM_03_5/M0/has_data">
+      <obj_property name="ElementShortName">has_data</obj_property>
+      <obj_property name="ObjectShortName">has_data</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_03_5/M0/cnt">
+      <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_03_5/M0/RAM_O">
+      <obj_property name="ElementShortName">RAM_O[35:0]</obj_property>
+      <obj_property name="ObjectShortName">RAM_O[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_03_5/M0/DO_reg">
+      <obj_property name="ElementShortName">DO_reg[35:0]</obj_property>
+      <obj_property name="ObjectShortName">DO_reg[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_03_5/M0/addr_I">
+      <obj_property name="ElementShortName">addr_I[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_I[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_DTC_top/U/LM_03_5/M0/addr_O">
+      <obj_property name="ElementShortName">addr_O[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_O[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_topmergetest_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_topmergetest" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="41" />
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/stub">
+      <obj_property name="ElementShortName">stub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">stub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/stub_out">
+      <obj_property name="ElementShortName">stub_out[35:0]</obj_property>
+      <obj_property name="ObjectShortName">stub_out[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/state">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/data_in">
+      <obj_property name="ElementShortName">data_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/addr">
+      <obj_property name="ElementShortName">addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/OFF_IN">
+      <obj_property name="ElementShortName">OFF_IN[1:0]</obj_property>
+      <obj_property name="ObjectShortName">OFF_IN[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/OFF_OUT">
+      <obj_property name="ElementShortName">OFF_OUT[1:0]</obj_property>
+      <obj_property name="ObjectShortName">OFF_OUT[1:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/hold">
+      <obj_property name="ElementShortName">hold</obj_property>
+      <obj_property name="ObjectShortName">hold</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/reset0">
+      <obj_property name="ElementShortName">reset0</obj_property>
+      <obj_property name="ObjectShortName">reset0</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/reset1">
+      <obj_property name="ElementShortName">reset1</obj_property>
+      <obj_property name="ObjectShortName">reset1</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/reset2">
+      <obj_property name="ElementShortName">reset2</obj_property>
+      <obj_property name="ObjectShortName">reset2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/reset3">
+      <obj_property name="ElementShortName">reset3</obj_property>
+      <obj_property name="ObjectShortName">reset3</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/M01_gstub">
+      <obj_property name="ElementShortName">M01_gstub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M01_gstub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/M01_valid">
+      <obj_property name="ElementShortName">M01_valid</obj_property>
+      <obj_property name="ObjectShortName">M01_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/M02_gstub">
+      <obj_property name="ElementShortName">M02_gstub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M02_gstub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/M02_valid">
+      <obj_property name="ElementShortName">M02_valid</obj_property>
+      <obj_property name="ObjectShortName">M02_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/M03_gstub">
+      <obj_property name="ElementShortName">M03_gstub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M03_gstub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/M03_valid">
+      <obj_property name="ElementShortName">M03_valid</obj_property>
+      <obj_property name="ObjectShortName">M03_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/M04_gstub">
+      <obj_property name="ElementShortName">M04_gstub[35:0]</obj_property>
+      <obj_property name="ObjectShortName">M04_gstub[35:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/M04_valid">
+      <obj_property name="ElementShortName">M04_valid</obj_property>
+      <obj_property name="ObjectShortName">M04_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/h00">
+      <obj_property name="ElementShortName">h00</obj_property>
+      <obj_property name="ObjectShortName">h00</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/h01">
+      <obj_property name="ElementShortName">h01</obj_property>
+      <obj_property name="ObjectShortName">h01</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/h02">
+      <obj_property name="ElementShortName">h02</obj_property>
+      <obj_property name="ObjectShortName">h02</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/h03">
+      <obj_property name="ElementShortName">h03</obj_property>
+      <obj_property name="ObjectShortName">h03</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/hold">
+      <obj_property name="ElementShortName">hold</obj_property>
+      <obj_property name="ObjectShortName">hold</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/re00">
+      <obj_property name="ElementShortName">re00</obj_property>
+      <obj_property name="ObjectShortName">re00</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/re01">
+      <obj_property name="ElementShortName">re01</obj_property>
+      <obj_property name="ObjectShortName">re01</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/re02">
+      <obj_property name="ElementShortName">re02</obj_property>
+      <obj_property name="ObjectShortName">re02</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/re03">
+      <obj_property name="ElementShortName">re03</obj_property>
+      <obj_property name="ObjectShortName">re03</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group79">
+      <obj_property name="label">LM01</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/reset0">
+         <obj_property name="ElementShortName">reset0</obj_property>
+         <obj_property name="ObjectShortName">reset0</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/reset1">
+         <obj_property name="ElementShortName">reset1</obj_property>
+         <obj_property name="ObjectShortName">reset1</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/reset2">
+         <obj_property name="ElementShortName">reset2</obj_property>
+         <obj_property name="ObjectShortName">reset2</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/reset3">
+         <obj_property name="ElementShortName">reset3</obj_property>
+         <obj_property name="ObjectShortName">reset3</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/TMUX">
+         <obj_property name="ElementShortName">TMUX[2:0]</obj_property>
+         <obj_property name="ObjectShortName">TMUX[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/TMUX_OFF">
+         <obj_property name="ElementShortName">TMUX_OFF[1:0]</obj_property>
+         <obj_property name="ObjectShortName">TMUX_OFF[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/sector">
+         <obj_property name="ElementShortName">sector[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sector[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/valid">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/stub_in">
+         <obj_property name="ElementShortName">stub_in[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub_in[35:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/BX">
+         <obj_property name="ElementShortName">BX[11:0]</obj_property>
+         <obj_property name="ObjectShortName">BX[11:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/BX_OFF">
+         <obj_property name="ElementShortName">BX_OFF[2:0]</obj_property>
+         <obj_property name="ObjectShortName">BX_OFF[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/rd_en">
+         <obj_property name="ElementShortName">rd_en</obj_property>
+         <obj_property name="ObjectShortName">rd_en</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/OFF_OUT">
+         <obj_property name="ElementShortName">OFF_OUT[1:0]</obj_property>
+         <obj_property name="ObjectShortName">OFF_OUT[1:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/stub_out">
+         <obj_property name="ElementShortName">stub_out[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub_out[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/has_data">
+         <obj_property name="ElementShortName">has_data</obj_property>
+         <obj_property name="ObjectShortName">has_data</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/valid1">
+         <obj_property name="ElementShortName">valid1</obj_property>
+         <obj_property name="ObjectShortName">valid1</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/valid2">
+         <obj_property name="ElementShortName">valid2</obj_property>
+         <obj_property name="ObjectShortName">valid2</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/re_dly">
+         <obj_property name="ElementShortName">re_dly[3:0]</obj_property>
+         <obj_property name="ObjectShortName">re_dly[3:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/hd_dly">
+         <obj_property name="ElementShortName">hd_dly[2:0]</obj_property>
+         <obj_property name="ObjectShortName">hd_dly[2:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/valid_out">
+         <obj_property name="ElementShortName">valid_out</obj_property>
+         <obj_property name="ObjectShortName">valid_out</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/wehere">
+         <obj_property name="ElementShortName">wehere</obj_property>
+         <obj_property name="ObjectShortName">wehere</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/we0">
+         <obj_property name="ElementShortName">we0</obj_property>
+         <obj_property name="ObjectShortName">we0</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/we1">
+         <obj_property name="ElementShortName">we1</obj_property>
+         <obj_property name="ObjectShortName">we1</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/we2">
+         <obj_property name="ElementShortName">we2</obj_property>
+         <obj_property name="ObjectShortName">we2</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/we3">
+         <obj_property name="ElementShortName">we3</obj_property>
+         <obj_property name="ObjectShortName">we3</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/re0">
+         <obj_property name="ElementShortName">re0</obj_property>
+         <obj_property name="ObjectShortName">re0</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/re1">
+         <obj_property name="ElementShortName">re1</obj_property>
+         <obj_property name="ObjectShortName">re1</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/re2">
+         <obj_property name="ElementShortName">re2</obj_property>
+         <obj_property name="ObjectShortName">re2</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/re3">
+         <obj_property name="ElementShortName">re3</obj_property>
+         <obj_property name="ObjectShortName">re3</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/stub0">
+         <obj_property name="ElementShortName">stub0[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub0[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/stub1">
+         <obj_property name="ElementShortName">stub1[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub1[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/stub2">
+         <obj_property name="ElementShortName">stub2[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub2[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/stub3">
+         <obj_property name="ElementShortName">stub3[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub3[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/stub_out_reg">
+         <obj_property name="ElementShortName">stub_out_reg[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub_out_reg[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/has_data0">
+         <obj_property name="ElementShortName">has_data0</obj_property>
+         <obj_property name="ObjectShortName">has_data0</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/has_data1">
+         <obj_property name="ElementShortName">has_data1</obj_property>
+         <obj_property name="ObjectShortName">has_data1</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/has_data2">
+         <obj_property name="ElementShortName">has_data2</obj_property>
+         <obj_property name="ObjectShortName">has_data2</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/has_data3">
+         <obj_property name="ElementShortName">has_data3</obj_property>
+         <obj_property name="ObjectShortName">has_data3</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/has_data_reg">
+         <obj_property name="ElementShortName">has_data_reg</obj_property>
+         <obj_property name="ObjectShortName">has_data_reg</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/myTMUX">
+         <obj_property name="ElementShortName">myTMUX[31:0]</obj_property>
+         <obj_property name="ObjectShortName">myTMUX[31:0]</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/mySECT">
+         <obj_property name="ElementShortName">mySECT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">mySECT[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group92">
+      <obj_property name="label">M1_T0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/we">
+         <obj_property name="ElementShortName">we</obj_property>
+         <obj_property name="ObjectShortName">we</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/DI">
+         <obj_property name="ElementShortName">DI[35:0]</obj_property>
+         <obj_property name="ObjectShortName">DI[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/re">
+         <obj_property name="ElementShortName">re</obj_property>
+         <obj_property name="ObjectShortName">re</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/DO">
+         <obj_property name="ElementShortName">DO[35:0]</obj_property>
+         <obj_property name="ObjectShortName">DO[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/valid2">
+         <obj_property name="ElementShortName">valid2</obj_property>
+         <obj_property name="ObjectShortName">valid2</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/has_data">
+         <obj_property name="ElementShortName">has_data</obj_property>
+         <obj_property name="ObjectShortName">has_data</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/cnt">
+         <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/RAM_O">
+         <obj_property name="ElementShortName">RAM_O[35:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM_O[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/DO_reg">
+         <obj_property name="ElementShortName">DO_reg[35:0]</obj_property>
+         <obj_property name="ObjectShortName">DO_reg[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/addr_I">
+         <obj_property name="ElementShortName">addr_I[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_I[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_01/M0/addr_O">
+         <obj_property name="ElementShortName">addr_O[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_O[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group105">
+      <obj_property name="label">M4_T0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+         <obj_property name="CustomSignalColor">#008080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/we">
+         <obj_property name="ElementShortName">we</obj_property>
+         <obj_property name="ObjectShortName">we</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/DI">
+         <obj_property name="ElementShortName">DI[35:0]</obj_property>
+         <obj_property name="ObjectShortName">DI[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/re">
+         <obj_property name="ElementShortName">re</obj_property>
+         <obj_property name="ObjectShortName">re</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/DO">
+         <obj_property name="ElementShortName">DO[35:0]</obj_property>
+         <obj_property name="ObjectShortName">DO[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/valid2">
+         <obj_property name="ElementShortName">valid2</obj_property>
+         <obj_property name="ObjectShortName">valid2</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/has_data">
+         <obj_property name="ElementShortName">has_data</obj_property>
+         <obj_property name="ObjectShortName">has_data</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/cnt">
+         <obj_property name="ElementShortName">cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/RAM_O">
+         <obj_property name="ElementShortName">RAM_O[35:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM_O[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/DO_reg">
+         <obj_property name="ElementShortName">DO_reg[35:0]</obj_property>
+         <obj_property name="ObjectShortName">DO_reg[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/addr_I">
+         <obj_property name="ElementShortName">addr_I[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_I[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/LM_04/M0/addr_O">
+         <obj_property name="ElementShortName">addr_O[3:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_O[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group880">
+      <obj_property name="label">tmux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX/stub_out">
+         <obj_property name="ElementShortName">stub_out[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub_out[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX/sel">
+         <obj_property name="ElementShortName">sel[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sel[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX/stub00">
+         <obj_property name="ElementShortName">stub00[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub00[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX/stub01">
+         <obj_property name="ElementShortName">stub01[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub01[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX/stub02">
+         <obj_property name="ElementShortName">stub02[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub02[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX/stub03">
+         <obj_property name="ElementShortName">stub03[35:0]</obj_property>
+         <obj_property name="ObjectShortName">stub03[35:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group278">
+      <obj_property name="label">tmux_pe</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/h00">
+         <obj_property name="ElementShortName">h00</obj_property>
+         <obj_property name="ObjectShortName">h00</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/h01">
+         <obj_property name="ElementShortName">h01</obj_property>
+         <obj_property name="ObjectShortName">h01</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/h02">
+         <obj_property name="ElementShortName">h02</obj_property>
+         <obj_property name="ObjectShortName">h02</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/h03">
+         <obj_property name="ElementShortName">h03</obj_property>
+         <obj_property name="ObjectShortName">h03</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/hold">
+         <obj_property name="ElementShortName">hold</obj_property>
+         <obj_property name="ObjectShortName">hold</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/re00">
+         <obj_property name="ElementShortName">re00</obj_property>
+         <obj_property name="ObjectShortName">re00</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/re01">
+         <obj_property name="ElementShortName">re01</obj_property>
+         <obj_property name="ObjectShortName">re01</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/re02">
+         <obj_property name="ElementShortName">re02</obj_property>
+         <obj_property name="ObjectShortName">re02</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/tb_topmergetest/UUSM/TB_UU/TMUX_pe/re03">
+         <obj_property name="ElementShortName">re03</obj_property>
+         <obj_property name="ObjectShortName">re03</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

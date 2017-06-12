@@ -1,0 +1,1299 @@
+
+*** Running vivado
+    with args -log LEDPLAY.vds -m64 -mode batch -messageDb vivado.pb -source LEDPLAY.tcl
+
+
+****** Vivado v2014.3.1 (64-bit)
+  **** SW Build 1056140 on Thu Oct 30 16:30:39 MDT 2014
+  **** IP Build 1028902 on Fri Sep 26 17:35:13 MDT 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source LEDPLAY.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7vx690tffg1761-2
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.cache/wt [current_project]
+# set_property parent.project_path /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property board_part xilinx.com:vc709:part0:1.4 [current_project]
+# add_files -quiet /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp
+# set_property used_in_implementation false [get_files /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp]
+# read_verilog -library xil_defaultlib {
+#   /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v
+#   /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/BetterFifo.v
+#   /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/unpack.v
+#   /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/tmux_gen.v
+#   /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v
+#   /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/merge_pe.v
+#   /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/merge_mux.v
+#   /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v
+#   /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v
+#   /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_SM.v
+#   /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v
+#   /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/LEDPLAY.v
+# }
+# read_xdc /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/constrs_1/imports/new/LEDPLAY_try1.xdc
+# set_property used_in_implementation false [get_files /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/constrs_1/imports/new/LEDPLAY_try1.xdc]
+# catch { write_hwdef -file LEDPLAY.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top LEDPLAY -part xc7vx690tffg1761-2
+Command: synth_design -top LEDPLAY -part xc7vx690tffg1761-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-1223] The version limit for your license is '2016.04' and will expire in -387 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 871.809 ; gain = 140.332 ; free physical = 8924 ; free virtual = 9900
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'LEDPLAY' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/LEDPLAY.v:23]
+	Parameter S_IDLE bound to: 6'b000001 
+	Parameter S_NEXT bound to: 6'b000010 
+	Parameter S_00 bound to: 6'b000100 
+	Parameter S_01 bound to: 6'b001000 
+	Parameter S_10 bound to: 6'b010000 
+	Parameter S_11 bound to: 6'b100000 
+INFO: [Synth 8-638] synthesizing module 'IBUFGDS' [/home/gerstein/Xlinix/Vivado/2014.3.1/scripts/rt/data/unisim_comp.v:10647]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: FALSE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFGDS' (1#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/scripts/rt/data/unisim_comp.v:10647]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.runs/synth_1/.Xil/Vivado-11959-localhost/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.runs/synth_1/.Xil/Vivado-11959-localhost/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'DTC_top' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'module_in' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:26]
+	Parameter initfile bound to: /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/dummyinput_m0.dat - type: string 
+INFO: [Synth 8-638] synthesizing module 'Memory' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:23]
+	Parameter RAM_WIDTH bound to: 32 - type: integer 
+	Parameter RAM_DEPTH bound to: 256 - type: integer 
+	Parameter INIT_FILE bound to: /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/dummyinput_m0.dat - type: string 
+	Parameter RAM_PERFORMANCE bound to: HIGH_PERFORMANCE - type: string 
+INFO: [Synth 8-3876] $readmem data file '/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/dummyinput_m0.dat' is read successfully [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:49]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (3#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:23]
+WARNING: [Synth 8-689] width (10) of port connection 'addra' does not match port width (8) of module 'Memory' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:80]
+WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (8) of module 'Memory' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:85]
+INFO: [Synth 8-256] done synthesizing module 'module_in' (4#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:26]
+WARNING: [Synth 8-350] instance 'M01' of module 'module_in' requires 9 connections, but only 5 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+INFO: [Synth 8-638] synthesizing module 'module_in__parameterized0' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:26]
+	Parameter initfile bound to: /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/dummyinput_m1.dat - type: string 
+INFO: [Synth 8-638] synthesizing module 'Memory__parameterized0' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:23]
+	Parameter RAM_WIDTH bound to: 32 - type: integer 
+	Parameter RAM_DEPTH bound to: 256 - type: integer 
+	Parameter INIT_FILE bound to: /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/dummyinput_m1.dat - type: string 
+	Parameter RAM_PERFORMANCE bound to: HIGH_PERFORMANCE - type: string 
+INFO: [Synth 8-3876] $readmem data file '/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/dummyinput_m1.dat' is read successfully [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:49]
+INFO: [Synth 8-256] done synthesizing module 'Memory__parameterized0' (4#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:23]
+WARNING: [Synth 8-689] width (10) of port connection 'addra' does not match port width (8) of module 'Memory__parameterized0' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:80]
+WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (8) of module 'Memory__parameterized0' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:85]
+INFO: [Synth 8-256] done synthesizing module 'module_in__parameterized0' (4#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:26]
+WARNING: [Synth 8-350] instance 'M02' of module 'module_in' requires 9 connections, but only 5 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:54]
+INFO: [Synth 8-638] synthesizing module 'module_in__parameterized1' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:26]
+	Parameter initfile bound to: /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/dummyinput_m2.dat - type: string 
+INFO: [Synth 8-638] synthesizing module 'Memory__parameterized1' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:23]
+	Parameter RAM_WIDTH bound to: 32 - type: integer 
+	Parameter RAM_DEPTH bound to: 256 - type: integer 
+	Parameter INIT_FILE bound to: /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/dummyinput_m2.dat - type: string 
+	Parameter RAM_PERFORMANCE bound to: HIGH_PERFORMANCE - type: string 
+INFO: [Synth 8-3876] $readmem data file '/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/dummyinput_m2.dat' is read successfully [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:49]
+INFO: [Synth 8-256] done synthesizing module 'Memory__parameterized1' (4#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:23]
+WARNING: [Synth 8-689] width (10) of port connection 'addra' does not match port width (8) of module 'Memory__parameterized1' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:80]
+WARNING: [Synth 8-689] width (10) of port connection 'addrb' does not match port width (8) of module 'Memory__parameterized1' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:85]
+INFO: [Synth 8-256] done synthesizing module 'module_in__parameterized1' (4#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:26]
+WARNING: [Synth 8-350] instance 'M03' of module 'module_in' requires 9 connections, but only 5 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:62]
+INFO: [Synth 8-638] synthesizing module 'unpack' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/unpack.v:23]
+INFO: [Synth 8-256] done synthesizing module 'unpack' (5#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/unpack.v:23]
+INFO: [Synth 8-638] synthesizing module 'tmux_gen' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/tmux_gen.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/tmux_gen.v:38]
+INFO: [Synth 8-256] done synthesizing module 'tmux_gen' (6#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/tmux_gen.v:23]
+INFO: [Synth 8-638] synthesizing module 'LtoG_L2S' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:23]
+INFO: [Synth 8-638] synthesizing module 'Memory__parameterized2' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:23]
+	Parameter RAM_WIDTH bound to: 35 - type: integer 
+	Parameter RAM_DEPTH bound to: 2048 - type: integer 
+	Parameter INIT_FILE bound to: /home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/LtoG_L2S.hex - type: string 
+	Parameter RAM_PERFORMANCE bound to: HIGH_PERFORMANCE - type: string 
+INFO: [Synth 8-3876] $readmem data file '/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/LtoG_L2S.hex' is read successfully [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:49]
+INFO: [Synth 8-256] done synthesizing module 'Memory__parameterized2' (6#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:23]
+WARNING: [Synth 8-350] instance 'geom' of module 'Memory' requires 10 connections, but only 6 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+INFO: [Synth 8-256] done synthesizing module 'LtoG_L2S' (7#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:23]
+INFO: [Synth 8-638] synthesizing module 'link_mem' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:26]
+	Parameter myTMUX bound to: 0 - type: integer 
+	Parameter mySECT bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'BetterFifo' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/BetterFifo.v:23]
+INFO: [Synth 8-638] synthesizing module 'Memory__parameterized3' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:23]
+	Parameter RAM_WIDTH bound to: 36 - type: integer 
+	Parameter RAM_DEPTH bound to: 16 - type: integer 
+	Parameter INIT_FILE bound to: (null) - type: string 
+	Parameter RAM_PERFORMANCE bound to: HIGH_PERFORMANCE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'Memory__parameterized3' (7#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/Memory.v:23]
+INFO: [Synth 8-256] done synthesizing module 'BetterFifo' (8#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/BetterFifo.v:23]
+INFO: [Synth 8-256] done synthesizing module 'link_mem' (9#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:26]
+INFO: [Synth 8-638] synthesizing module 'link_mem__parameterized0' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:26]
+	Parameter myTMUX bound to: 1 - type: integer 
+	Parameter mySECT bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'link_mem__parameterized0' (9#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:26]
+INFO: [Synth 8-638] synthesizing module 'link_mem__parameterized1' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:26]
+	Parameter myTMUX bound to: 2 - type: integer 
+	Parameter mySECT bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'link_mem__parameterized1' (9#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:26]
+INFO: [Synth 8-638] synthesizing module 'link_mem__parameterized2' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:26]
+	Parameter myTMUX bound to: 3 - type: integer 
+	Parameter mySECT bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'link_mem__parameterized2' (9#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:26]
+INFO: [Synth 8-638] synthesizing module 'link_mem__parameterized3' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:26]
+	Parameter myTMUX bound to: 4 - type: integer 
+	Parameter mySECT bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'link_mem__parameterized3' (9#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:26]
+INFO: [Synth 8-638] synthesizing module 'link_mem__parameterized4' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:26]
+	Parameter myTMUX bound to: 5 - type: integer 
+	Parameter mySECT bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'link_mem__parameterized4' (9#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:26]
+INFO: [Synth 8-638] synthesizing module 'merge_mux' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/merge_mux.v:23]
+INFO: [Synth 8-256] done synthesizing module 'merge_mux' (10#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/merge_mux.v:23]
+WARNING: [Synth 8-350] instance 'TMUX0' of module 'merge_mux' requires 19 connections, but only 6 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:642]
+INFO: [Synth 8-638] synthesizing module 'merge_pe' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/merge_pe.v:26]
+	Parameter DELAY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'merge_pe' (11#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/merge_pe.v:26]
+WARNING: [Synth 8-350] instance 'TMUX0_pe' of module 'merge_pe' requires 36 connections, but only 9 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:651]
+WARNING: [Synth 8-350] instance 'TMUX1' of module 'merge_mux' requires 19 connections, but only 6 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:667]
+WARNING: [Synth 8-350] instance 'TMUX1_pe' of module 'merge_pe' requires 36 connections, but only 9 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:676]
+WARNING: [Synth 8-350] instance 'TMUX2' of module 'merge_mux' requires 19 connections, but only 6 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:692]
+WARNING: [Synth 8-350] instance 'TMUX2_pe' of module 'merge_pe' requires 36 connections, but only 9 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:701]
+WARNING: [Synth 8-350] instance 'TMUX3' of module 'merge_mux' requires 19 connections, but only 6 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:717]
+WARNING: [Synth 8-350] instance 'TMUX3_pe' of module 'merge_pe' requires 36 connections, but only 9 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:726]
+WARNING: [Synth 8-350] instance 'TMUX4' of module 'merge_mux' requires 19 connections, but only 6 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:742]
+WARNING: [Synth 8-350] instance 'TMUX4_pe' of module 'merge_pe' requires 36 connections, but only 9 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:751]
+WARNING: [Synth 8-350] instance 'TMUX5' of module 'merge_mux' requires 19 connections, but only 6 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:767]
+WARNING: [Synth 8-350] instance 'TMUX5_pe' of module 'merge_pe' requires 36 connections, but only 9 given [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:776]
+INFO: [Synth 8-638] synthesizing module 'DTC_SM' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_SM.v:23]
+	Parameter LATENCY bound to: 95 - type: integer 
+	Parameter START bound to: 10 - type: integer 
+	Parameter L0 bound to: 10 - type: integer 
+	Parameter L0a bound to: 11 - type: integer 
+	Parameter L1 bound to: 105 - type: integer 
+	Parameter L1a bound to: 106 - type: integer 
+	Parameter L2 bound to: 153 - type: integer 
+	Parameter L2a bound to: 154 - type: integer 
+	Parameter L3 bound to: 201 - type: integer 
+	Parameter L3a bound to: 202 - type: integer 
+	Parameter L4 bound to: 249 - type: integer 
+	Parameter L4a bound to: 250 - type: integer 
+	Parameter L5 bound to: 296 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_SM.v:77]
+INFO: [Synth 8-256] done synthesizing module 'DTC_SM' (12#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_SM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DTC_top' (13#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/LEDPLAY.v:163]
+INFO: [Synth 8-256] done synthesizing module 'LEDPLAY' (14#1) [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/imports/new/LEDPLAY.v:23]
+WARNING: [Synth 8-3331] design LEDPLAY has unconnected port sw_east
+WARNING: [Synth 8-3331] design LEDPLAY has unconnected port dip_0
+WARNING: [Synth 8-3331] design LEDPLAY has unconnected port dip_1
+WARNING: [Synth 8-3331] design LEDPLAY has unconnected port dip_2
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 910.051 ; gain = 178.574 ; free physical = 8885 ; free virtual = 9861
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin geom:addra[10] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:addra[9] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:addra[8] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:addra[7] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:addra[6] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:addra[5] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:addra[4] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:addra[3] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:addra[2] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:addra[1] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:addra[0] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[34] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[33] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[32] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[31] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[30] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[29] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[28] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[27] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[26] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[25] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[24] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[23] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[22] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[21] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[20] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[19] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[18] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[17] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[16] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[15] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[14] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[13] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[12] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[11] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[10] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[9] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[8] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[7] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[6] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[5] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[4] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[3] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[2] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[1] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:dina[0] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:clka to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin geom:wea to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/LtoG.v:51]
+WARNING: [Synth 8-3295] tying undriven pin M01:clk_in to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[31] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[30] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[29] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[28] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[27] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[26] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[25] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[24] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[23] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[22] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[21] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[20] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[19] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[18] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[17] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[16] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[15] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[14] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[13] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[12] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[11] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[10] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[9] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[8] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[7] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[6] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[5] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[4] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[3] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[2] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[1] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:data_i[0] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:addr[9] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:addr[8] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:addr[7] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:addr[6] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:addr[5] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:addr[4] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:addr[3] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:addr[2] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:addr[1] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:addr[0] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M01:wea to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:46]
+WARNING: [Synth 8-3295] tying undriven pin M02:clk_in to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:54]
+WARNING: [Synth 8-3295] tying undriven pin M02:data_i[31] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:54]
+WARNING: [Synth 8-3295] tying undriven pin M02:data_i[30] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:54]
+WARNING: [Synth 8-3295] tying undriven pin M02:data_i[29] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:54]
+WARNING: [Synth 8-3295] tying undriven pin M02:data_i[28] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:54]
+WARNING: [Synth 8-3295] tying undriven pin M02:data_i[27] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:54]
+WARNING: [Synth 8-3295] tying undriven pin M02:data_i[26] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:54]
+WARNING: [Synth 8-3295] tying undriven pin M02:data_i[25] to constant 0 [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/DTC_top.v:54]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 910.051 ; gain = 178.574 ; free physical = 8885 ; free virtual = 9861
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /home/gerstein/Xlinix/Vivado/2014.3.1/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockRegion.xml
+Loading clock buffers from /home/gerstein/Xlinix/Vivado/2014.3.1/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ClockBuffers.xml
+Loading clock placement rules from /home/gerstein/Xlinix/Vivado/2014.3.1/data/parts/xilinx/virtex7/ClockPlacerRules.xml
+Loading package pin functions from /home/gerstein/Xlinix/Vivado/2014.3.1/data/parts/xilinx/virtex7/PinFunctions.xml...
+Loading package from /home/gerstein/Xlinix/Vivado/2014.3.1/data/parts/xilinx/virtex7/virtex7/xc7vx690t/ffg1761/Package.xml
+Loading io standards from /home/gerstein/Xlinix/Vivado/2014.3.1/data/./parts/xilinx/virtex7/IOStandards.xml
+Loading device configuration modes from /home/gerstein/Xlinix/Vivado/2014.3.1/data/parts/xilinx/virtex7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.runs/synth_1/.Xil/Vivado-11959-localhost/dcp/clk_wiz_0_in_context.xdc] for cell 'proc_clk'
+Finished Parsing XDC File [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.runs/synth_1/.Xil/Vivado-11959-localhost/dcp/clk_wiz_0_in_context.xdc] for cell 'proc_clk'
+Parsing XDC File [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/constrs_1/imports/new/LEDPLAY_try1.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/constrs_1/imports/new/LEDPLAY_try1.xdc:9]
+Finished Parsing XDC File [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/constrs_1/imports/new/LEDPLAY_try1.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.33 . Memory (MB): peak = 1397.570 ; gain = 2.996 ; free physical = 8405 ; free virtual = 9382
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1397.574 ; gain = 666.098 ; free physical = 8353 ; free virtual = 9331
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1397.574 ; gain = 666.098 ; free physical = 8353 ; free virtual = 9331
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1397.574 ; gain = 666.098 ; free physical = 8353 ; free virtual = 9331
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'hd_dly_reg' and it is trimmed from '3' to '2' bits. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 're_dly_reg' and it is trimmed from '4' to '3' bits. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'hd_dly_reg' and it is trimmed from '3' to '2' bits. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 're_dly_reg' and it is trimmed from '4' to '3' bits. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'hd_dly_reg' and it is trimmed from '3' to '2' bits. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 're_dly_reg' and it is trimmed from '4' to '3' bits. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'hd_dly_reg' and it is trimmed from '3' to '2' bits. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 're_dly_reg' and it is trimmed from '4' to '3' bits. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'hd_dly_reg' and it is trimmed from '3' to '2' bits. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 're_dly_reg' and it is trimmed from '4' to '3' bits. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'hd_dly_reg' and it is trimmed from '3' to '2' bits. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:63]
+WARNING: [Synth 8-3936] Found unconnected internal register 're_dly_reg' and it is trimmed from '4' to '3' bits. [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/link_mem.v:56]
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'LEDPLAY'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1397.574 ; gain = 666.098 ; free physical = 8352 ; free virtual = 9331
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 219   
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	              256 Bit    Registers := 3     
+	               36 Bit    Registers := 241   
+	               35 Bit    Registers := 6     
+	               32 Bit    Registers := 6     
+	               18 Bit    Registers := 3     
+	               13 Bit    Registers := 3     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 7     
+	                4 Bit    Registers := 231   
+	                3 Bit    Registers := 25    
+	                2 Bit    Registers := 61    
+	                1 Bit    Registers := 471   
++---RAMs : 
+	              70K Bit         RAMs := 3     
+	               8K Bit         RAMs := 3     
+	              576 Bit         RAMs := 72    
++---Muxes : 
+	   8 Input    256 Bit        Muxes := 3     
+	   2 Input     36 Bit        Muxes := 72    
+	   4 Input     36 Bit        Muxes := 18    
+	   2 Input     10 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 9     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 76    
+	   4 Input      2 Bit        Muxes := 9     
+	  13 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 371   
+	  16 Input      1 Bit        Muxes := 21    
+	   4 Input      1 Bit        Muxes := 21    
+	  13 Input      1 Bit        Muxes := 14    
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module LEDPLAY 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module Memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module module_in 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Memory__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module module_in__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Memory__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module module_in__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module unpack 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input    256 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 5     
+Module tmux_gen 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module Memory__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               35 Bit    Registers := 2     
++---RAMs : 
+	              70K Bit         RAMs := 1     
+Module LtoG_L2S 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module Memory__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 2     
++---RAMs : 
+	              576 Bit         RAMs := 1     
+Module BetterFifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               36 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module link_mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     36 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module link_mem__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     36 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module link_mem__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     36 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module link_mem__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     36 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module link_mem__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     36 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module link_mem__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     36 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module merge_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+Module merge_pe 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+Module DTC_SM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 8     
+Module DTC_top 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1397.574 ; gain = 666.098 ; free physical = 8352 ; free virtual = 9331
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'M02/count_dly_reg[12:0]' into 'M01/count_dly_reg[12:0]' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:54]
+INFO: [Synth 8-4471] merging register 'M03/count_dly_reg[12:0]' into 'M01/count_dly_reg[12:0]' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:54]
+INFO: [Synth 8-4471] merging register 'M02/start_frame_reg_reg' into 'M01/start_frame_reg_reg' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:63]
+INFO: [Synth 8-4471] merging register 'M03/start_frame_reg_reg' into 'M01/start_frame_reg_reg' [/home/gerstein/Xlinix/Vivado/2014.3.1/vc709_DTC/vc709_DTC.srcs/sources_1/new/module_in.v:63]
+WARNING: [Synth 8-3331] design LEDPLAY has unconnected port sw_east
+WARNING: [Synth 8-3331] design LEDPLAY has unconnected port dip_0
+WARNING: [Synth 8-3331] design LEDPLAY has unconnected port dip_1
+WARNING: [Synth 8-3331] design LEDPLAY has unconnected port dip_2
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1397.574 ; gain = 666.098 ; free physical = 8350 ; free virtual = 9329
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1397.574 ; gain = 666.098 ; free physical = 8350 ; free virtual = 9329
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM LG_01/geom/BRAM_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM LG_02/geom/BRAM_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM LG_03/geom/BRAM_reg to conserve power
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM:
++------------+---------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+----------------------------+
+|Module Name | RTL Object                | PORT A (depth X width) | W | R | PORT B (depth X width) | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name          | 
++------------+---------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+----------------------------+
+|DTC_top     | M01/input_tracks/BRAM_reg | 256 X 32               | W |   | 256 X 32(WRITE_FIRST)  |   | R | Port A and B | 1      | 0      | LEDPLAY/DTC_top/extram__31 | 
+|DTC_top     | M02/input_tracks/BRAM_reg | 256 X 32               | W |   | 256 X 32(WRITE_FIRST)  |   | R | Port A and B | 1      | 0      | LEDPLAY/DTC_top/extram__33 | 
+|DTC_top     | M03/input_tracks/BRAM_reg | 256 X 32               | W |   | 256 X 32(WRITE_FIRST)  |   | R | Port A and B | 1      | 0      | LEDPLAY/DTC_top/extram__35 | 
+|DTC_top     | LG_01/geom/BRAM_reg       | 2 K X 35               | W |   | 2 K X 35(WRITE_FIRST)  |   | R | Port A and B | 0      | 2      | LEDPLAY/DTC_top/extram__37 | 
+|DTC_top     | LG_02/geom/BRAM_reg       | 2 K X 35               | W |   | 2 K X 35(WRITE_FIRST)  |   | R | Port A and B | 0      | 2      | LEDPLAY/DTC_top/extram__39 | 
+|DTC_top     | LG_03/geom/BRAM_reg       | 2 K X 35               | W |   | 2 K X 35(WRITE_FIRST)  |   | R | Port A and B | 0      | 2      | LEDPLAY/DTC_top/extram__41 | 
++------------+---------------------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+----------------------------+
+
+Note: The table shows RAMs generated at current stage. Some RAM generation could be reversed due to later optimizations. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
+Distributed RAM: 
++------------+----------------------+--------------------+----------------------+--------------+-------------------------------------------+
+|Module Name | RTL Object           | Inference Criteria | Size (depth X width) | Primitives   | Hierarchical Name                         | 
++------------+----------------------+--------------------+----------------------+--------------+-------------------------------------------+
+|link_mem    | M0/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__24 | 
+|link_mem    | M1/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__25 | 
+|link_mem    | M2/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__26 | 
+|link_mem    | M3/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__27 | 
+|link_mem    | M0/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__28 | 
+|link_mem    | M1/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__29 | 
+|link_mem    | M2/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__30 | 
+|link_mem    | M3/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__31 | 
+|link_mem    | M0/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__32 | 
+|link_mem    | M1/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__33 | 
+|link_mem    | M2/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__34 | 
+|link_mem    | M3/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__35 | 
+|link_mem    | M0/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__36 | 
+|link_mem    | M1/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__37 | 
+|link_mem    | M2/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__38 | 
+|link_mem    | M3/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__39 | 
+|link_mem    | M0/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__40 | 
+|link_mem    | M1/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__41 | 
+|link_mem    | M2/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__42 | 
+|link_mem    | M3/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__43 | 
+|link_mem    | M0/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__44 | 
+|link_mem    | M1/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__45 | 
+|link_mem    | M2/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__46 | 
+|link_mem    | M3/Fifo_mem/BRAM_reg | Implied            | 16 X 36              | RAM32M x 6   | LEDPLAY/DTC_top/Multiple/link_mem/ram__47 | 
++------------+----------------------+--------------------+----------------------+--------------+-------------------------------------------+
+
+Note: The table shows RAMs generated at current stage. Some RAM generation could be reversed due to later optimizations. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[255] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[254] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[253] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[252] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[251] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[250] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[249] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[248] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[247] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[246] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[245] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[244] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[243] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[242] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[241] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[240] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[239] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[238] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[237] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[236] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[235] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[234] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[212] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[194] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[176] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[158] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[140] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[122] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[104] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[86] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[68] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[50] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[32] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[14] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[13] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[12] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[11] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[10] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[9] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[8] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[7] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[6] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[5] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[4] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[3] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[2] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[1] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BOXCAR_reg[0] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\stub_reg_reg[0] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BX_reg_reg[11] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BX_reg_reg[10] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BX_reg_reg[9] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BX_reg_reg[8] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BX_reg_reg[7] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BX_reg_reg[6] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BX_reg_reg[5] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BX_reg_reg[4] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BX_reg_reg[3] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BX_reg_reg[2] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BX_reg_reg[1] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\BX_reg_reg[0] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\status_reg_reg[8] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\status_reg_reg[7] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\status_reg_reg[6] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\status_reg_reg[5] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\status_reg_reg[4] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\status_reg_reg[3] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\status_reg_reg[2] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\status_reg_reg[1] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (\status_reg_reg[0] ) is unused and will be removed from module unpack.
+WARNING: [Synth 8-3332] Sequential element (none_reg) is unused and will be removed from module merge_pe.
+WARNING: [Synth 8-3332] Sequential element (\M01/count_reg[11] ) is unused and will be removed from module DTC_top.
+WARNING: [Synth 8-3332] Sequential element (\M01/count_reg[12] ) is unused and will be removed from module DTC_top.
+WARNING: [Synth 8-3332] Sequential element (\M01/count_dly_reg[12] ) is unused and will be removed from module DTC_top.
+WARNING: [Synth 8-3332] Sequential element (\M01/count_dly_reg[11] ) is unused and will be removed from module DTC_top.
+WARNING: [Synth 8-3332] Sequential element (\M01/count_dly_reg[10] ) is unused and will be removed from module DTC_top.
+WARNING: [Synth 8-3332] Sequential element (\M01/count_dly_reg[9] ) is unused and will be removed from module DTC_top.
+WARNING: [Synth 8-3332] Sequential element (\M01/count_dly_reg[8] ) is unused and will be removed from module DTC_top.
+WARNING: [Synth 8-3332] Sequential element (\M01/count_dly_reg[7] ) is unused and will be removed from module DTC_top.
+WARNING: [Synth 8-3332] Sequential element (\M01/count_dly_reg[6] ) is unused and will be removed from module DTC_top.
+WARNING: [Synth 8-3332] Sequential element (\M01/count_dly_reg[2] ) is unused and will be removed from module DTC_top.
+WARNING: [Synth 8-3332] Sequential element (\M01/count_dly_reg[1] ) is unused and will be removed from module DTC_top.
+WARNING: [Synth 8-3332] Sequential element (\M01/count_dly_reg[0] ) is unused and will be removed from module DTC_top.
+WARNING: [Synth 8-3332] Sequential element (\blinker_reg[35] ) is unused and will be removed from module LEDPLAY.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX3_pe/re03_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX2_pe/re03_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX1_pe/re03_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX0_pe/re03_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX5_pe/re03_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX4_pe/re03_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX3_pe/\sel_reg_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX2_pe/\sel_reg_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX1_pe/\sel_reg_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX0_pe/\sel_reg_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX5_pe/\sel_reg_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX4_pe/\sel_reg_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX3_pe/\test[0].sel_reg_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX2_pe/\test[0].sel_reg_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX1_pe/\test[0].sel_reg_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX0_pe/\test[0].sel_reg_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX5_pe/\test[0].sel_reg_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (UU/TMUX4_pe/\test[0].sel_reg_reg[1][2] )
+WARNING: [Synth 8-3332] Sequential element (re03_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (re04_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (re05_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (re06_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (re07_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (re08_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (re09_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (re10_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (re11_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (re12_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (re13_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (re14_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (re15_reg) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (\sel_reg_reg[0][3] ) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (\sel_reg_reg[0][2] ) is unused and will be removed from module merge_pe__1.
+WARNING: [Synth 8-3332] Sequential element (\test[0].sel_reg_reg[1][3] ) is unused and will be removed from module merge_pe__1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 1397.578 ; gain = 666.102 ; free physical = 8350 ; free virtual = 9331
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 1397.578 ; gain = 666.102 ; free physical = 8350 ; free virtual = 9331
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 1397.578 ; gain = 666.102 ; free physical = 8350 ; free virtual = 9331
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 1397.578 ; gain = 666.102 ; free physical = 8350 ; free virtual = 9331
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+info: Source pin 'proc_clk/sysclk' of generated clock is hierarchical
+info: Moving clock source from hierarchical pin 'proc_clk/sysclk' to 'diff_clk_200/O'
+INFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1397.578 ; gain = 666.102 ; free physical = 8343 ; free virtual = 9323
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 1413.570 ; gain = 682.094 ; free physical = 8328 ; free virtual = 9309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:57 . Memory (MB): peak = 1484.852 ; gain = 753.375 ; free physical = 8255 ; free virtual = 9236
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:58 . Memory (MB): peak = 1484.852 ; gain = 753.375 ; free physical = 8255 ; free virtual = 9236
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:58 . Memory (MB): peak = 1484.852 ; gain = 753.375 ; free physical = 8255 ; free virtual = 9236
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 1484.852 ; gain = 753.375 ; free physical = 8255 ; free virtual = 9236
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|LEDPLAY     | UU/LM_01_0/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_0/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_0/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_0/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_0/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_1/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_1/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_1/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_1/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_1/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_2/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_2/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_2/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_2/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_2/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_3/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_3/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_3/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_3/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_3/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_4/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_4/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_4/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_4/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_4/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_5/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_5/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_5/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_5/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_01_5/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_0/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_0/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_0/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_0/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_0/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_1/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_1/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_1/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_1/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_1/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_2/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_2/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_2/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_2/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_2/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_3/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_3/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_3/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_3/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_3/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_4/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_4/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_4/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_4/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_4/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_5/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_5/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_5/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_5/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_02_5/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_0/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_0/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_0/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_0/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_0/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_1/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_1/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_1/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_1/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_1/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_2/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_2/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_2/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_2/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_2/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_3/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_3/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_3/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_3/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_3/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_4/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_4/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_4/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_4/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_4/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_5/re_dly_reg[2] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_5/M3/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_5/M2/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_5/M1/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|LEDPLAY     | UU/LM_03_5/M0/valid2_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |clk_wiz_0  |     1|
+|2     |CARRY4     |    12|
+|3     |LUT1       |   266|
+|4     |LUT2       |   258|
+|5     |LUT3       |   834|
+|6     |LUT4       |   355|
+|7     |LUT5       |  1798|
+|8     |LUT6       |   518|
+|9     |MUXF7      |   648|
+|10    |RAM32M     |   432|
+|11    |RAMB18E1_3 |     1|
+|12    |RAMB18E1_4 |     1|
+|13    |RAMB18E1_5 |     1|
+|14    |RAMB36E1_2 |     3|
+|15    |RAMB36E1_3 |     3|
+|16    |SRL16E     |    90|
+|17    |FDRE       | 10670|
+|18    |FDSE       |     5|
+|19    |IBUF       |     4|
+|20    |IBUFGDS    |     1|
+|21    |OBUF       |     8|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------+----------------------------+------+
+|      |Instance           |Module                      |Cells |
++------+-------------------+----------------------------+------+
+|1     |top                |                            | 15910|
+|2     |  UU               |DTC_top                     | 15720|
+|3     |    LG_01          |LtoG_L2S                    |     6|
+|4     |      geom         |Memory__parameterized2_171  |     3|
+|5     |    LG_02          |LtoG_L2S_0                  |     6|
+|6     |      geom         |Memory__parameterized2_170  |     3|
+|7     |    LG_03          |LtoG_L2S_1                  |     6|
+|8     |      geom         |Memory__parameterized2      |     3|
+|9     |    LM_01_0        |link_mem                    |   736|
+|10    |      M0           |BetterFifo_162              |   146|
+|11    |        Fifo_mem   |Memory__parameterized3_169  |    78|
+|12    |      M1           |BetterFifo_163              |   146|
+|13    |        Fifo_mem   |Memory__parameterized3_168  |    78|
+|14    |      M2           |BetterFifo_164              |   218|
+|15    |        Fifo_mem   |Memory__parameterized3_167  |    78|
+|16    |      M3           |BetterFifo_165              |   183|
+|17    |        Fifo_mem   |Memory__parameterized3_166  |    78|
+|18    |    LM_01_1        |link_mem__parameterized0    |   736|
+|19    |      M0           |BetterFifo_154              |   146|
+|20    |        Fifo_mem   |Memory__parameterized3_161  |    78|
+|21    |      M1           |BetterFifo_155              |   146|
+|22    |        Fifo_mem   |Memory__parameterized3_160  |    78|
+|23    |      M2           |BetterFifo_156              |   218|
+|24    |        Fifo_mem   |Memory__parameterized3_159  |    78|
+|25    |      M3           |BetterFifo_157              |   183|
+|26    |        Fifo_mem   |Memory__parameterized3_158  |    78|
+|27    |    LM_01_2        |link_mem__parameterized1    |   736|
+|28    |      M0           |BetterFifo_146              |   146|
+|29    |        Fifo_mem   |Memory__parameterized3_153  |    78|
+|30    |      M1           |BetterFifo_147              |   146|
+|31    |        Fifo_mem   |Memory__parameterized3_152  |    78|
+|32    |      M2           |BetterFifo_148              |   218|
+|33    |        Fifo_mem   |Memory__parameterized3_151  |    78|
+|34    |      M3           |BetterFifo_149              |   183|
+|35    |        Fifo_mem   |Memory__parameterized3_150  |    78|
+|36    |    LM_01_3        |link_mem__parameterized2    |   736|
+|37    |      M0           |BetterFifo_138              |   146|
+|38    |        Fifo_mem   |Memory__parameterized3_145  |    78|
+|39    |      M1           |BetterFifo_139              |   146|
+|40    |        Fifo_mem   |Memory__parameterized3_144  |    78|
+|41    |      M2           |BetterFifo_140              |   218|
+|42    |        Fifo_mem   |Memory__parameterized3_143  |    78|
+|43    |      M3           |BetterFifo_141              |   183|
+|44    |        Fifo_mem   |Memory__parameterized3_142  |    78|
+|45    |    LM_01_4        |link_mem__parameterized3    |   736|
+|46    |      M0           |BetterFifo_130              |   146|
+|47    |        Fifo_mem   |Memory__parameterized3_137  |    78|
+|48    |      M1           |BetterFifo_131              |   146|
+|49    |        Fifo_mem   |Memory__parameterized3_136  |    78|
+|50    |      M2           |BetterFifo_132              |   218|
+|51    |        Fifo_mem   |Memory__parameterized3_135  |    78|
+|52    |      M3           |BetterFifo_133              |   183|
+|53    |        Fifo_mem   |Memory__parameterized3_134  |    78|
+|54    |    LM_01_5        |link_mem__parameterized4    |   751|
+|55    |      M0           |BetterFifo_122              |   146|
+|56    |        Fifo_mem   |Memory__parameterized3_129  |    78|
+|57    |      M1           |BetterFifo_123              |   146|
+|58    |        Fifo_mem   |Memory__parameterized3_128  |    78|
+|59    |      M2           |BetterFifo_124              |   218|
+|60    |        Fifo_mem   |Memory__parameterized3_127  |    78|
+|61    |      M3           |BetterFifo_125              |   183|
+|62    |        Fifo_mem   |Memory__parameterized3_126  |    78|
+|63    |    LM_02_0        |link_mem_2                  |   736|
+|64    |      M0           |BetterFifo_114              |   146|
+|65    |        Fifo_mem   |Memory__parameterized3_121  |    78|
+|66    |      M1           |BetterFifo_115              |   146|
+|67    |        Fifo_mem   |Memory__parameterized3_120  |    78|
+|68    |      M2           |BetterFifo_116              |   218|
+|69    |        Fifo_mem   |Memory__parameterized3_119  |    78|
+|70    |      M3           |BetterFifo_117              |   183|
+|71    |        Fifo_mem   |Memory__parameterized3_118  |    78|
+|72    |    LM_02_1        |link_mem__parameterized0_3  |   736|
+|73    |      M0           |BetterFifo_106              |   146|
+|74    |        Fifo_mem   |Memory__parameterized3_113  |    78|
+|75    |      M1           |BetterFifo_107              |   146|
+|76    |        Fifo_mem   |Memory__parameterized3_112  |    78|
+|77    |      M2           |BetterFifo_108              |   218|
+|78    |        Fifo_mem   |Memory__parameterized3_111  |    78|
+|79    |      M3           |BetterFifo_109              |   183|
+|80    |        Fifo_mem   |Memory__parameterized3_110  |    78|
+|81    |    LM_02_2        |link_mem__parameterized1_4  |   736|
+|82    |      M0           |BetterFifo_98               |   146|
+|83    |        Fifo_mem   |Memory__parameterized3_105  |    78|
+|84    |      M1           |BetterFifo_99               |   146|
+|85    |        Fifo_mem   |Memory__parameterized3_104  |    78|
+|86    |      M2           |BetterFifo_100              |   218|
+|87    |        Fifo_mem   |Memory__parameterized3_103  |    78|
+|88    |      M3           |BetterFifo_101              |   183|
+|89    |        Fifo_mem   |Memory__parameterized3_102  |    78|
+|90    |    LM_02_3        |link_mem__parameterized2_5  |   736|
+|91    |      M0           |BetterFifo_90               |   146|
+|92    |        Fifo_mem   |Memory__parameterized3_97   |    78|
+|93    |      M1           |BetterFifo_91               |   146|
+|94    |        Fifo_mem   |Memory__parameterized3_96   |    78|
+|95    |      M2           |BetterFifo_92               |   218|
+|96    |        Fifo_mem   |Memory__parameterized3_95   |    78|
+|97    |      M3           |BetterFifo_93               |   183|
+|98    |        Fifo_mem   |Memory__parameterized3_94   |    78|
+|99    |    LM_02_4        |link_mem__parameterized3_6  |   736|
+|100   |      M0           |BetterFifo_82               |   146|
+|101   |        Fifo_mem   |Memory__parameterized3_89   |    78|
+|102   |      M1           |BetterFifo_83               |   146|
+|103   |        Fifo_mem   |Memory__parameterized3_88   |    78|
+|104   |      M2           |BetterFifo_84               |   218|
+|105   |        Fifo_mem   |Memory__parameterized3_87   |    78|
+|106   |      M3           |BetterFifo_85               |   183|
+|107   |        Fifo_mem   |Memory__parameterized3_86   |    78|
+|108   |    LM_02_5        |link_mem__parameterized4_7  |   738|
+|109   |      M0           |BetterFifo_74               |   146|
+|110   |        Fifo_mem   |Memory__parameterized3_81   |    78|
+|111   |      M1           |BetterFifo_75               |   146|
+|112   |        Fifo_mem   |Memory__parameterized3_80   |    78|
+|113   |      M2           |BetterFifo_76               |   218|
+|114   |        Fifo_mem   |Memory__parameterized3_79   |    78|
+|115   |      M3           |BetterFifo_77               |   183|
+|116   |        Fifo_mem   |Memory__parameterized3_78   |    78|
+|117   |    LM_03_0        |link_mem_8                  |   735|
+|118   |      M0           |BetterFifo_66               |   146|
+|119   |        Fifo_mem   |Memory__parameterized3_73   |    78|
+|120   |      M1           |BetterFifo_67               |   146|
+|121   |        Fifo_mem   |Memory__parameterized3_72   |    78|
+|122   |      M2           |BetterFifo_68               |   218|
+|123   |        Fifo_mem   |Memory__parameterized3_71   |    78|
+|124   |      M3           |BetterFifo_69               |   183|
+|125   |        Fifo_mem   |Memory__parameterized3_70   |    78|
+|126   |    LM_03_1        |link_mem__parameterized0_9  |   735|
+|127   |      M0           |BetterFifo_58               |   146|
+|128   |        Fifo_mem   |Memory__parameterized3_65   |    78|
+|129   |      M1           |BetterFifo_59               |   146|
+|130   |        Fifo_mem   |Memory__parameterized3_64   |    78|
+|131   |      M2           |BetterFifo_60               |   218|
+|132   |        Fifo_mem   |Memory__parameterized3_63   |    78|
+|133   |      M3           |BetterFifo_61               |   183|
+|134   |        Fifo_mem   |Memory__parameterized3_62   |    78|
+|135   |    LM_03_2        |link_mem__parameterized1_10 |   735|
+|136   |      M0           |BetterFifo_50               |   146|
+|137   |        Fifo_mem   |Memory__parameterized3_57   |    78|
+|138   |      M1           |BetterFifo_51               |   146|
+|139   |        Fifo_mem   |Memory__parameterized3_56   |    78|
+|140   |      M2           |BetterFifo_52               |   218|
+|141   |        Fifo_mem   |Memory__parameterized3_55   |    78|
+|142   |      M3           |BetterFifo_53               |   183|
+|143   |        Fifo_mem   |Memory__parameterized3_54   |    78|
+|144   |    LM_03_3        |link_mem__parameterized2_11 |   735|
+|145   |      M0           |BetterFifo_42               |   146|
+|146   |        Fifo_mem   |Memory__parameterized3_49   |    78|
+|147   |      M1           |BetterFifo_43               |   146|
+|148   |        Fifo_mem   |Memory__parameterized3_48   |    78|
+|149   |      M2           |BetterFifo_44               |   218|
+|150   |        Fifo_mem   |Memory__parameterized3_47   |    78|
+|151   |      M3           |BetterFifo_45               |   183|
+|152   |        Fifo_mem   |Memory__parameterized3_46   |    78|
+|153   |    LM_03_4        |link_mem__parameterized3_12 |   735|
+|154   |      M0           |BetterFifo_34               |   146|
+|155   |        Fifo_mem   |Memory__parameterized3_41   |    78|
+|156   |      M1           |BetterFifo_35               |   146|
+|157   |        Fifo_mem   |Memory__parameterized3_40   |    78|
+|158   |      M2           |BetterFifo_36               |   218|
+|159   |        Fifo_mem   |Memory__parameterized3_39   |    78|
+|160   |      M3           |BetterFifo_37               |   183|
+|161   |        Fifo_mem   |Memory__parameterized3_38   |    78|
+|162   |    LM_03_5        |link_mem__parameterized4_13 |   737|
+|163   |      M0           |BetterFifo                  |   146|
+|164   |        Fifo_mem   |Memory__parameterized3_33   |    78|
+|165   |      M1           |BetterFifo_28               |   146|
+|166   |        Fifo_mem   |Memory__parameterized3_32   |    78|
+|167   |      M2           |BetterFifo_29               |   218|
+|168   |        Fifo_mem   |Memory__parameterized3_31   |    78|
+|169   |      M3           |BetterFifo_30               |   183|
+|170   |        Fifo_mem   |Memory__parameterized3      |    78|
+|171   |    M01            |module_in                   |    34|
+|172   |      input_tracks |Memory                      |     1|
+|173   |    M02            |module_in__parameterized0   |     1|
+|174   |      input_tracks |Memory__parameterized0      |     1|
+|175   |    M03            |module_in__parameterized1   |     1|
+|176   |      input_tracks |Memory__parameterized1      |     1|
+|177   |    TMG_01         |tmux_gen                    |    62|
+|178   |    TMG_02         |tmux_gen_14                 |    62|
+|179   |    TMG_03         |tmux_gen_15                 |    62|
+|180   |    TMUX0          |merge_mux                   |    72|
+|181   |    TMUX0_pe       |merge_pe                    |     9|
+|182   |    TMUX1          |merge_mux_16                |    72|
+|183   |    TMUX1_pe       |merge_pe_17                 |     9|
+|184   |    TMUX2          |merge_mux_18                |    72|
+|185   |    TMUX2_pe       |merge_pe_19                 |     9|
+|186   |    TMUX3          |merge_mux_20                |   144|
+|187   |    TMUX3_pe       |merge_pe_21                 |     9|
+|188   |    TMUX4          |merge_mux_22                |    72|
+|189   |    TMUX4_pe       |merge_pe_23                 |     9|
+|190   |    TMUX5          |merge_mux_24                |    72|
+|191   |    TMUX5_pe       |merge_pe_25                 |     9|
+|192   |    U01            |unpack                      |   484|
+|193   |    U02            |unpack_26                   |   484|
+|194   |    U03            |unpack_27                   |   484|
+|195   |    theSM          |DTC_SM                      |   209|
++------+-------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 1484.852 ; gain = 753.375 ; free physical = 8255 ; free virtual = 9236
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 300 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 1484.852 ; gain = 164.520 ; free physical = 8255 ; free virtual = 9236
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 1484.852 ; gain = 753.375 ; free physical = 8255 ; free virtual = 9236
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 458 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 433 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 432 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+101 Infos, 242 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:01:03 . Memory (MB): peak = 1484.855 ; gain = 656.043 ; free physical = 8255 ; free virtual = 9236
+# write_checkpoint LEDPLAY.dcp
+# catch { report_utilization -file LEDPLAY_utilization_synth.rpt -pb LEDPLAY_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.39 . Memory (MB): peak = 1484.855 ; gain = 0.000 ; free physical = 8254 ; free virtual = 9236
+INFO: [Common 17-206] Exiting Vivado at Mon May 22 16:18:44 2017...
